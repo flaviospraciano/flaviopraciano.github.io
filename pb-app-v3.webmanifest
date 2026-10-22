@@ -1,0 +1,61 @@
+{
+  "id": "./",
+  "name": "Português Banana",
+  "short_name": "Pt Banana",
+  "description": "Mapa interativo do Português de concursos: 1.800 questões de crase, porquês, concordância, regência e as pegadinhas mais comuns de prova. Criado por Flávio S. Praciano.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101C40",
+  "theme_color": "#101C40",
+  "categories": [
+    "education",
+    "games"
+  ],
+  "icons": [
+    {
+      "src": "pb-icon-192-v3.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pb-icon-512-v3.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pb-maskable-512-v3.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "pb-tela-1-v3.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Menu inicial com o mapa das regiões"
+    },
+    {
+      "src": "pb-tela-2-v3.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Questão com explicação do erro"
+    },
+    {
+      "src": "pb-tela-3-v3.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mapa de lições e chefões"
+    }
+  ]
+}
