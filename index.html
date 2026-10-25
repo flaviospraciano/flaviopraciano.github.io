@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>G3 Formatura</title>
 <meta name="description" content="G3 Formatura: agenda, planilhas das escolas e faculdades, notas e missões da equipe. Produzido por Flávio S. Praciano.">
-<meta name="theme-color" content="#FAFAF7">
+<meta name="theme-color" content="#FBFCFF">
 <meta name="color-scheme" content="light dark">
-<script>try{if(localStorage.getItem("g3_theme_ver")!=="2"){localStorage.setItem("g3_theme","leve");localStorage.setItem("g3_theme_ver","2");}var _t=localStorage.getItem("g3_theme")||"leve";if(_t==="auto")_t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=_t;}catch(e){}</script>
-<meta name="g3-version" content="1.4.0">
+<script>try{if(localStorage.getItem("g3_theme_ver")!=="3"){localStorage.setItem("g3_theme","leve");localStorage.setItem("g3_theme_ver","3");}var _t=localStorage.getItem("g3_theme")||"leve";if(_t==="auto")_t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"leve";if(_t!=="dark")_t="leve";document.documentElement.dataset.theme=_t;}catch(e){}</script>
+<meta name="g3-version" content="1.9.0">
 <link rel="manifest" href="g3-app-v1.webmanifest">
 <link rel="icon" type="image/png" href="g3-icon-192.png">
 <link rel="apple-touch-icon" href="g3-apple-touch.png">
@@ -141,43 +141,49 @@ table.tax{width:100%;border-collapse:collapse}table.tax th{background:#7BD389;co
 table.tax td{padding:8px 14px;border-bottom:1px solid var(--line);font-weight:700}table.tax td:last-child{font-size:1.05rem;color:var(--ink)}
 .lhead{margin:22px 0 8px;display:flex;flex-direction:column;gap:6px}.lhead b{font-size:1.08rem}
 /* ===== TEMA LEVE (claro e fino) ===== */
-:root[data-theme="leve"]{--bg:#FAFAF7;--sf:#FFFFFF;--sf2:#F5F4EF;--sf3:#EDEBE4;--line:#ECE9E0;--ink:#2A2822;--soft:#6B675B;--faint:#9C9889;--gold:#D9A400;--gold2:#946C00;--goldd:#7A5A00;--btn:#FFCB3D;--btntx:#1D1B15;--ghost:#FFFFFF;--ghostbd:#DEDACD;--ghosttx:#2A2822;--link:#8A6400;--red:#E2514B;--org:#F29A1F;--grn:#2FAE66;--blue:#3B78DA;--danger:#C9372F;--topbg:rgba(250,250,247,.88);--navbg:rgba(255,255,255,.94);--thbg:#F6F3EA;--thtx:#7A6A2C;--thbd:#E9E3D0;--zebra:#FCFBF8;--toastbg:#FFFFFF;--toastbd:#E6E2D6;--herobg:linear-gradient(160deg,#FFF8E2,#FFFFFF 70%);--herobd:#F3E4B0;--herotx:#4B3F1C;--cr:#FCEAE8;--crt:#B1302A;--co:#FFF1DE;--cot:#945200;--cg:#E4F6EB;--cgt:#17773F;--r:12px;--evbg:#FFF2CC;color-scheme:light}
-[data-theme=leve] body{font-weight:400}
-[data-theme=leve] b,[data-theme=leve] strong{font-weight:600}
-[data-theme=leve] .top{padding-top:calc(8px + env(safe-area-inset-top,0px));padding-bottom:8px}
-[data-theme=leve] .top h1{font-weight:600;font-size:1rem}
-[data-theme=leve] .back,[data-theme=leve] .theme{border-width:1px;width:34px;height:34px;border-radius:10px;background:var(--sf);font-size:1rem}
-[data-theme=leve] .btn{font-weight:600;box-shadow:none;border-radius:12px;padding:11px 15px}
-[data-theme=leve] .btn.ghost{border-width:1px}
-[data-theme=leve] .btn.sm{padding:7px 11px}
+:root[data-theme="leve"]{--bg:#FBFCFF;--sf:#FFFFFF;--sf2:#F6F8FF;--sf3:#ECF0FC;--line:#EAEEF9;--ink:#2A3150;--soft:#667091;--faint:#9AA2BF;--gold:#F5B63D;--gold2:#B8730A;--goldd:#9A5F08;--btn:#FFD966;--btntx:#3A2600;--ghost:#FFFFFF;--ghostbd:#DDE3F5;--ghosttx:#2A3150;--link:#5B54D6;--red:#F26B7B;--org:#FFA64D;--grn:#3CC98A;--blue:#6AA3F8;--danger:#E04A5E;--topbg:rgba(255,255,255,.92);--navbg:rgba(255,255,255,.97);--thbg:#F5F7FF;--thtx:#5560B5;--thbd:#E8ECFA;--zebra:#FCFDFF;--toastbg:#FFFFFF;--toastbd:#EAEEF9;--herobg:linear-gradient(135deg,#FFF1BF 0%,#FFE3B8 60%,#FFD6D6 120%);--herobd:#FFE7A8;--herotx:#4A3300;--cr:#FFEAEE;--crt:#C93349;--co:#FFF2E0;--cot:#B8650A;--cg:#E3F9EE;--cgt:#12885A;--r:12px;--evbg:#FFF6D6;color-scheme:light}
+[data-theme=leve] .back,[data-theme=leve] .theme{background:var(--sf);border-radius:12px}
+[data-theme=leve] .btn{box-shadow:none;border-radius:12px}
 [data-theme=leve] .card,[data-theme=leve] .item,[data-theme=leve] .mi,[data-theme=leve] .ev,[data-theme=leve] .sum div,[data-theme=leve] .wrap,[data-theme=leve] .meta,[data-theme=leve] .kpi{box-shadow:0 1px 2px rgba(40,34,10,.04)}
-[data-theme=leve] .item,[data-theme=leve] .mi{border-radius:14px}
-[data-theme=leve] .lbl{font-weight:600;letter-spacing:.06em}
-[data-theme=leve] .link,[data-theme=leve] .seg button,[data-theme=leve] .opt{font-weight:600}
-[data-theme=leve] .st{font-weight:600;font-size:.72rem;padding:2px 9px}
 [data-theme=leve] .st.r{background:var(--cr);color:var(--crt)}[data-theme=leve] .st.o{background:var(--co);color:var(--cot)}[data-theme=leve] .st.g{background:var(--cg);color:var(--cgt)}
 [data-theme=leve] .st.r::before{background:var(--red)}[data-theme=leve] .st.o::before{background:var(--org)}[data-theme=leve] .st.g::before{background:var(--grn)}
-[data-theme=leve] .hero{border:1px solid var(--herobd);border-radius:18px;padding:16px}
-[data-theme=leve] .hero h2{font-weight:600}
-[data-theme=leve] .nav button{font-weight:500}
-[data-theme=leve] .nav button[aria-current="true"]{font-weight:700}
 [data-theme=leve] .mini{box-shadow:0 2px 8px rgba(40,34,10,.12)}
 [data-theme=leve] .icard{box-shadow:0 1px 2px rgba(40,34,10,.04)}
-[data-theme=leve] .fab{box-shadow:0 6px 16px rgba(120,90,0,.22);border-radius:16px}
 [data-theme=leve] .sheet{background:rgba(35,30,15,.32)}
 [data-theme=leve] .sheet .in{box-shadow:0 -8px 30px rgba(40,34,10,.12)}
-[data-theme=leve] .toast{color:var(--ink);box-shadow:0 8px 24px rgba(40,34,10,.14);border-width:1px}
+[data-theme=leve] .toast{color:var(--ink);box-shadow:0 8px 24px rgba(40,34,10,.14)}
 [data-theme=leve] .toast span{color:var(--soft)}
-[data-theme=leve] .exit{background:rgba(35,30,15,.35)}[data-theme=leve] .exit .box{border-width:1px}
-[data-theme=leve] .sh th{font-weight:600;border-bottom-width:1px}
-[data-theme=leve] .sh td.r>button,[data-theme=leve] .sh td.o>button,[data-theme=leve] .sh td.g>button{font-weight:600}
-[data-theme=leve] .yr{border-width:1px}[data-theme=leve] .yr.on{border-color:var(--btn)}
-[data-theme=leve] .profit .pc{border-width:1px}[data-theme=leve] .cal button.has{border-width:1px}[data-theme=leve] .cal button.td{border-width:1.5px}
-[data-theme=leve] .opt.on,[data-theme=leve] .item.hl{border-width:1px}[data-theme=leve] .demo{border-width:1px}
+[data-theme=leve] .exit{background:rgba(35,30,15,.35)}
+[data-theme=leve] .yr.on{border-color:var(--btn)}
 [data-theme=leve] .taxhd{background:#EAF6EE;color:#17663A}
 [data-theme=leve] table.tax th{background:#F3F8F4;color:#2D6B45}[data-theme=leve] table.tax th:last-child{background:#DFF1E5;color:#17663A}
 [data-theme=leve] .calcbtn{background:var(--grn);box-shadow:none}
-:root[data-theme="leve"] .foot .flat{background:transparent;filter:drop-shadow(0 0 1px rgba(0,0,0,.85)) drop-shadow(0 1px 3px rgba(0,0,0,.35))}
+
+/* ===== VISUAL VIBRANTE (modo claro) ===== */
+[data-theme=leve] body{background:linear-gradient(180deg,#F1F5FF 0,#FBFCFF 260px)}
+[data-theme=leve] .top{border-bottom-color:transparent;box-shadow:0 4px 14px rgba(60,70,150,.05)}
+[data-theme=leve] .btn:not(.ghost):not(.calcbtn):not(.danger){background:linear-gradient(135deg,#FFE58A,#FFCF70);box-shadow:0 3px 10px rgba(255,190,60,.25)}
+[data-theme=leve] .yr.on{background:linear-gradient(135deg,#FFEB9E,#FFD98A);border-color:transparent}
+[data-theme=leve] .fab{background:linear-gradient(135deg,#FFE58A,#FFCB6B);box-shadow:0 6px 16px rgba(255,180,50,.32)}
+[data-theme=leve] .hero{box-shadow:0 6px 18px rgba(255,190,90,.18);border-color:transparent}
+[data-theme=leve] .hero *{color:var(--herotx)!important}
+[data-theme=leve] .nav button[aria-current="true"]{color:#C9780A}
+[data-theme=leve] .item .e{background:#FFF6D9}
+[data-theme=leve] .menu .mi .e{background:#FFF6D9}
+[data-theme=leve] .menu .mi:nth-child(5n+2) .e{background:#E6EEFF}[data-theme=leve] .menu .mi:nth-child(5n+3) .e{background:#E3F8EE}[data-theme=leve] .menu .mi:nth-child(5n+4) .e{background:#FFE9ED}[data-theme=leve] .menu .mi:nth-child(5n) .e{background:#F0E7FF}
+[data-theme=leve] .lbl{color:#8088AD}
+[data-theme=leve] .bar i{background:linear-gradient(90deg,#FFD966,#FFBE55)}
+[data-theme=leve] .bar.g i{background:linear-gradient(90deg,#3CC98A,#7BE0B3)}[data-theme=leve] .bar.o i{background:linear-gradient(90deg,#FFA64D,#FFC888)}[data-theme=leve] .bar.r i{background:linear-gradient(90deg,#F26B7B,#FF9DA8)}
+[data-theme=leve] .kpi:nth-child(1){background:#FFF9E6;border-color:#FFEDB8}[data-theme=leve] .kpi:nth-child(2){background:#EEFBF4;border-color:#CDF2DF}[data-theme=leve] .kpi:nth-child(3){background:#F0F5FF;border-color:#D7E3FF}
+[data-theme=leve] .item.pinned{background:#FFFBEC}
+[data-theme=leve] .cobrar{background:linear-gradient(135deg,#FFF8DC,#FFEFC9);border-color:#FFE19A}
+/* ===== KITS COLORIDOS E WHATSAPP ===== */
+.kcs{display:inline-flex;gap:4px;flex-wrap:nowrap;align-items:center}.kcs .sep{display:none}
+.kc{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.78rem;font-weight:700;color:#fff;background:var(--kc);white-space:nowrap}
+.kdot{width:12px;height:12px;border-radius:50%;flex:none;display:inline-block;background:var(--kc,#999)}
+.qb{width:34px;height:34px;border-radius:50%;border:1px solid var(--ghostbd);background:var(--sf2);color:var(--ink);font-size:1.1rem;flex:none}.qb:disabled{opacity:.35}
+.swt{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}.swt button{width:32px;height:32px;border-radius:50%;border:3px solid transparent}.swt button.on{border-color:var(--ink)}
+.cw{display:flex;align-items:center;gap:2px;padding:0 4px 0 10px;min-height:42px}.cw .wa{color:var(--grn);font-weight:700;text-decoration:none;white-space:nowrap;padding:8px 0}.cw .ed{background:none;border:0;padding:8px;opacity:.55;font-size:.9rem;width:auto;min-height:0}
 /* ===== BOTOES DISCRETOS + GRADE DE ESCOLAS ===== */
 .mini{position:fixed;right:26px;z-index:29;width:42px;height:42px;border-radius:50%;border:1px solid var(--ghostbd);background:var(--sf);color:var(--ink);font-size:1.05rem;display:grid;place-items:center;box-shadow:0 3px 10px rgba(0,0,0,.18);opacity:.92}
 .mini.m1{bottom:calc(154px + env(safe-area-inset-bottom,0px))}.mini.m2{bottom:calc(204px + env(safe-area-inset-bottom,0px))}
@@ -188,6 +194,8 @@ table.tax td{padding:8px 14px;border-bottom:1px solid var(--line);font-weight:70
 .icard .icb .tiny{display:block;margin-top:3px}
 .icard .mv2{display:flex;gap:6px}.icard .mv2 button{flex:1;border:1px solid var(--ghostbd);background:var(--sf2);border-radius:10px;padding:7px 0;font-size:.9rem;color:var(--ink)}
 .icard .mv2 button:disabled{opacity:.35}
+.irow{position:relative}.pinb{position:absolute;right:34px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:0;background:transparent;font-size:1rem;opacity:.28;filter:grayscale(1)}
+.pinb.on{opacity:1;filter:none;background:var(--evbg)}.item.pinned{border-color:var(--gold)}
 /* ===== METAS ===== */
 .bar{height:8px;border-radius:99px;background:var(--sf3);overflow:hidden}.bar i{display:block;height:100%;border-radius:99px;background:var(--gold);transition:width .4s}
 .bar.g i{background:var(--grn)}.bar.o i{background:var(--org)}.bar.r i{background:var(--red)}
@@ -280,8 +288,8 @@ async function exportPDF(t){toast("⏳","Gerando PDF…","");let J;try{J=await p
 /* ================= CALCULADORA DE LUCROS ================= */
 function lucroAluno(t,a){if(t.modelo==="mensal"){const preco=(t.parcela||0)*(t.meses||[]).length,custo=Number(t.custoAluno)||0,pago=payStatus(t,a).pago;
     return{pacote:"Mensalidades",custo,preco,lucro:preco-custo,pago,atual:preco>0?Math.min(pago,preco)*(preco-custo)/preco:0};}
-  const k=kits().find(x=>x.id===a.kit),preco=Number(a.total)||(k?Number(k.preco):0)||0,custo=k?Number(k.custo)||0:0,pago=Number(a.pago)||0;
-  return{pacote:k?k.nome:"Sem kit",custo,preco,lucro:preco-custo,pago,atual:preco>0?Math.min(pago,preco)*(preco-custo)/preco:0};}
+  const kk=kitIds(a).map(id=>kits().find(x=>x.id===id)).filter(Boolean),soma=kk.reduce((s,k)=>s+(Number(k.preco)||0),0),preco=Number(a.total)||soma||0,custo=kk.reduce((s,k)=>s+(Number(k.custo)||0),0),pago=Number(a.pago)||0;
+  return{pacote:kk.length?kk.map(k=>k.nome).join(" + "):"Sem kit",custo,preco,lucro:preco-custo,pago,atual:preco>0?Math.min(pago,preco)*(preco-custo)/preco:0};}
 function lucroData(ano){return D.inst.filter(i=>ano==="todos"||instAno(i)===ano).sort(byName).map(i=>{
   const tt=D.turmas.filter(t=>t.inst===i.id).sort(byName).map(t=>{const rows=D.alunos.filter(a=>a.turma===t.id).sort(byName).map(a=>Object.assign({nome:a.nome},lucroAluno(t,a)));
     const sm=k=>rows.reduce((s,r)=>s+r[k],0);return{t,rows,atual:sm("atual"),ideal:sm("lucro"),pago:sm("pago"),custo:sm("custo"),preco:sm("preco")};}).filter(x=>x.rows.length);
@@ -412,7 +420,7 @@ function parseTaxasTexto(rows){const out={};rows.forEach(r=>{const j=(Array.isAr
 function atualizarTaxas(){const A=activeRates();sheet(`<div class="grab"></div><h2>🔄 Atualizar taxas do dia</h2><p class="small muted">Tire uma foto ou print da tabela de taxas da ${esc(A.tx.nome)} (app ou site), anexe o PDF ou cole o texto. O G3 lê as taxas e mostra o que mudou antes de aplicar.</p>
   <div class="btns"><label class="btn full">📷 Foto ou print da tabela<input type="file" id="txImg" accept="image/*" hidden></label><label class="btn ghost full">📎 Anexar PDF ou imagem<input type="file" id="txDoc" accept=".pdf,image/*,application/pdf" hidden></label><button class="btn ghost full" id="txPaste">📋 Colar texto</button><button class="btn ghost full" id="txMan">✏️ Digitar à mão</button></div>`);
   const lerF=async f=>{sheet(`<div class="grab"></div><h2>Lendo tabela…</h2><div id="rdP"><p class="small muted"><span>Preparando…</span></p><div class="bar"><i style="width:3%"></i></div></div>`);
-    try{const rows=await rowsDeArquivo(f,(t,p)=>{const el=$("rdP");if(el){el.querySelector("span").textContent=t;el.querySelector(".bar i").style.width=Math.max(3,Math.round((p||0)*100))+"%";}});revisarTaxas(parseTaxasTexto(rows));}
+    try{const rows=(await rowsDeArquivo(f,(t,p)=>{const el=$("rdP");if(el){el.querySelector("span").textContent=t;el.querySelector(".bar i").style.width=Math.max(3,Math.round((p||0)*100))+"%";}}));revisarTaxas(parseTaxasTexto(rows.flatMap(x=>x.rows)));}
     catch(e){toast("⚠️","Não consegui ler a tabela",/offline|fetch/i.test(e&&e.message||"")?"Conecte-se à internet para ler fotos.":"Tente outra foto, mais reta e nítida.");atualizarTaxas();}};
   $("txImg").onchange=e=>e.target.files[0]&&lerF(e.target.files[0]);$("txDoc").onchange=e=>e.target.files[0]&&lerF(e.target.files[0]);$("txMan").onclick=taxForm;
   $("txPaste").onclick=()=>{sheet(`<div class="grab"></div><h2>Colar tabela</h2><p class="small muted">Uma modalidade por linha, ex.: “Débito 2,69%”, “Crédito à vista 4,49%”, “2x 9,99%”.</p><label class="fld"><textarea id="txT" style="min-height:200px"></textarea></label><div class="btns"><button class="btn full" id="txGo">Ler taxas</button></div>`);
@@ -457,17 +465,35 @@ const WD=["dom","seg","ter","qua","qui","sex","sáb"],MES=["janeiro","fevereiro"
 const flong=s=>{const d=new Date(s+"T12:00:00");return `${WD[d.getDay()]}, ${d.getDate()} de ${MES[d.getMonth()]}`;};
 const R=v=>"R$ "+(Number(v)||0).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
 function money(s){s=String(s==null?"":s).trim().replace(/\s|R\$/g,"");if(!s)return 0;if(s.includes(","))s=s.replace(/\./g,"").replace(",",".");else if(/^\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,"");const v=parseFloat(s);return isFinite(v)?Math.round(v*100)/100:0;}
+/* ===== TELEFONE PADRÃO (88) 9XXXX-XXXX · KITS E CORES ===== */
+function fmtFone(x){let d=String(x==null?"":x).replace(/\D/g,"").replace(/^0+/,"");if(!d)return"";if((d.length===12||d.length===13)&&d.startsWith("55"))d=d.slice(2);
+  if(d.length===11)return`(${d.slice(0,2)}) ${d.slice(2,7)}-${d.slice(7)}`;
+  if(d.length===10)return`(${d.slice(0,2)}) 9${d.slice(2,6)}-${d.slice(6)}`;
+  if(d.length===9)return`(88) ${d.slice(0,5)}-${d.slice(5)}`;
+  if(d.length===8)return`(88) 9${d.slice(0,4)}-${d.slice(4)}`;
+  return String(x).trim();}
+const foneOk=x=>/^\(\d{2}\) \d{5}-\d{4}$/.test(String(x||""));
+const waLink=x=>{const f=fmtFone(x);return foneOk(f)?"https://wa.me/55"+f.replace(/\D/g,""):"";};
+const PALETA=["#E53935","#1E88E5","#2E9E4F","#8E24AA","#F57C00","#00897B","#D81B60","#795548","#3949AB","#7B8B1E","#00ACC1","#546E7A"];
+const kitIds=a=>Array.isArray(a.kits)?a.kits:(a.kit?[a.kit]:[]);
+function corKit(k){if(!k)return"#9AA2BF";if(k.cor)return k.cor;const i=kits().findIndex(x=>x.id===k.id);return PALETA[(i<0?0:i)%PALETA.length];}
+function kitsComCor(list){const usadas=new Set(list.filter(k=>k.cor).map(k=>k.cor));return list.map(k=>{if(k.cor)return k;const livre=PALETA.find(c=>!usadas.has(c))||PALETA[usadas.size%PALETA.length];usadas.add(livre);return Object.assign({},k,{cor:livre});});}
+const saveKitsList=l=>B.set("config","team",Object.assign({},D.config.find(c=>c.id==="team")||{},{kits:kitsComCor(l)}));
+function kitChips(a){const ks=kits(),cnt={};kitIds(a).forEach(id=>cnt[id]=(cnt[id]||0)+1);const out=Object.keys(cnt).map(id=>{const k=ks.find(x=>x.id===id);return k?`<span class="kc" style="--kc:${corKit(k)}">${esc(k.nome)}${cnt[id]>1?" ×"+cnt[id]:""}</span>`:"";}).filter(Boolean);
+  return out.length?`<span class="kcs">${out.join('<i class="sep"> + </i>')}</span>`:'<span class="muted">Escolher</span>';}
+function padronizarTudo(){if(!window._pf&&D.alunos.length){window._pf=1;D.alunos.forEach(a=>{const c=a.contato;if(!c)return;const f=fmtFone(c);if(f&&f!==c&&foneOk(f)){a.contato=f;B.update("alunos",a.id,{contato:f});}});}
+  const team=D.config.find(c=>c.id==="team");if(!window._kc&&team&&(team.kits||[]).some(k=>!k.cor)){window._kc=1;saveKitsList(team.kits);}}
 const ago=t=>{const m=Math.round((Date.now()-t)/60000);if(m<1)return"agora";if(m<60)return m+" min";const h=Math.round(m/60);if(h<24)return h+" h";return fdate(iso(new Date(t)));};
 const AUTHOR="Flávio S. Praciano";
 const CFG=window.G3_CONFIG||{};
 const DEMO=!(CFG.firebase&&CFG.firebase.apiKey&&!/COLE/i.test(CFG.firebase.apiKey)&&window.firebase);
 const COLS=["users","events","folders","notes","inst","turmas","alunos","missoes","config"];
 const THEME=()=>localStorage.getItem("g3_theme")||"leve";
-const THEMES=[["leve","☁️","Modo leve"],["light","☀️","Modo dia"],["dark","🌙","Modo noite"]];
-function curTheme(){const t=THEME();if(t==="auto")return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";return THEMES.some(x=>x[0]===t)?t:"leve";}
+const THEMES=[["leve","☀️","Modo claro"],["dark","🌙","Modo escuro"]];
+function curTheme(){const t=THEME();if(t==="auto")return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"leve";return t==="dark"?"dark":"leve";}
 function isDark(){return curTheme()==="dark";}
-function nextTheme(){const i=THEMES.findIndex(x=>x[0]===curTheme());return THEMES[(i+1)%THEMES.length];}
-function applyTheme(){const c=curTheme();document.documentElement.dataset.theme=c;const m=document.querySelector('meta[name="theme-color"]');if(m)m.content={dark:"#0B0B0D",light:"#F6F4EF",leve:"#FAFAF7"}[c];}
+function nextTheme(){return isDark()?THEMES[0]:THEMES[1];}
+function applyTheme(){const c=curTheme();document.documentElement.dataset.theme=c;const m=document.querySelector('meta[name="theme-color"]');if(m)m.content=c==="dark"?"#0B0B0D":"#FBFCFF";}
 function setTheme(t){localStorage.setItem("g3_theme",t);applyTheme();if(UID&&ME)render();}
 applyTheme();try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{if(THEME()==="auto"){applyTheme();}});}catch(e){}
 /* ================= FRASES ================= */
@@ -606,7 +632,7 @@ function renderNav(){const pend=D.missoes.filter(m=>forMe(m)&&m.tipo!=="aviso"&&
 function topBar(title,backable=true,extra=""){return `<header class="top">${backable?`<button class="back" id="bk" aria-label="Voltar">‹</button><img src="${LOGO}" class="logo sm" alt="G3">`:`<img src="${LOGO}" class="logo" alt="G3">`}<h1>${title}</h1>${extra}<button class="theme" id="thB" aria-label="Mudar para ${nextTheme()[2].toLowerCase()}" title="${nextTheme()[2]}">${nextTheme()[1]}</button><button class="back" id="me" aria-label="Perfil e ajustes" style="padding:0;overflow:hidden">${avatar(UID,"ava")}</button></header>`;}
 function bindTop(){const b=$("bk");if(b)b.onclick=()=>STACK.length?back():tab({v:"home"});$("me").onclick=()=>go({v:"ajustes"});$("thB").onclick=()=>{const n=nextTheme();setTheme(n[0]);toast(n[1],n[2],"Toque de novo para trocar. Automático em Perfil e ajustes.");};}
 /* ================= RENDER ================= */
-function render(){if(!UID||!ME)return;const fa=document.activeElement,fid=fa&&fa.id,sel=fa&&fa.selectionStart;const w=qa(".wrap")[0],sl=w?[w.scrollLeft,w.scrollTop]:null,sy=window.scrollY;
+function render(){if(!UID||!ME)return;try{padronizarTudo();}catch(e){}const fa=document.activeElement,fid=fa&&fa.id,sel=fa&&fa.selectionStart;const w=qa(".wrap")[0],sl=w?[w.scrollLeft,w.scrollTop]:null,sy=window.scrollY;
   const f={home:vHome,agenda:vAgenda,notas:vNotas,inst:vInst,instd:vInstD,turma:vTurma,missoes:vMissoes,equipe:vEquipe,ajustes:vAjustes,lucros:vLucros,fixas:vFixas,taxas:vTaxas}[VIEW.v]||vHome;
   $("view").innerHTML=f()+FOOT();bindTop();BIND.forEach(fn=>fn());BIND=[];renderNav();
   const w2=qa(".wrap")[0];if(w2&&sl&&VIEW._keep){w2.scrollLeft=sl[0];w2.scrollTop=sl[1];}if(VIEW._keep)window.scrollTo(0,sy);
@@ -714,22 +740,24 @@ function editNote(id,folder){const n=id?D.notes.find(x=>x.id===id):{titulo:"",te
   const d=$("nD");if(d)d.onclick=()=>{if(confirm("Excluir esta nota?")){B.del("notes",id);closeSheet();}};}
 /* ---------- escolas e faculdades ---------- */
 function stats(tid){const t=D.turmas.find(x=>x.id===tid),al=D.alunos.filter(a=>a.turma===tid);let g=0,o=0,r=0,pago=0,tot=0;al.forEach(a=>{const s=payStatus(t,a);s.c==="g"?g++:s.c==="o"?o++:r++;pago+=s.pago;tot+=s.total;});return{n:al.length,g,o,r,pago,tot};}
-const byOrdem=(a,b)=>(a.ordem||0)-(b.ordem||0)||byName(a,b);
-async function moverInst(id,dir,ids){const i=ids.indexOf(id),j=i+dir;if(j<0||j>=ids.length)return;[ids[i],ids[j]]=[ids[j],ids[i]];
-  await Promise.all(ids.map((x,k)=>{const o=D.inst.find(y=>y.id===x);if(!o||o.ordem===k+1)return null;o.ordem=k+1;return B.update("inst",x,{ordem:k+1});}));render();}
-function vInst(){const t=VIEW.t,ano=curAno(),L=D.inst.filter(i=>i.tipo===t&&instAno(i)===ano).sort(byOrdem),E=t==="escola"?"🏫":"🎓",org=!!VIEW.org&&L.length>1,ids=L.map(i=>i.id);
-  on(()=>{qa("[data-i]").forEach(b=>b.onclick=()=>go({v:"instd",id:b.dataset.i,t}));$("fab").onclick=()=>instForm(null,t);qa("[data-y]").forEach(b=>b.onclick=()=>{VIEW.ano=b.dataset.y;localStorage.setItem("g3_ano",b.dataset.y);render();});$("lucBtn").onclick=()=>go({v:"lucros",ano});$("rdBtn").onclick=()=>leitor({tipo:t,ano});
-    const og=$("orgB");if(og)og.onclick=()=>{VIEW.org=!VIEW.org;render();};qa("[data-mv]").forEach(b=>b.onclick=()=>moverInst(b.dataset.id,+b.dataset.mv,ids.slice()));});
+const byPin=(a,b)=>(!!b.fixada-!!a.fixada)||(a.fixada&&b.fixada?a.fixada-b.fixada:0)||byName(a,b);
+async function fixarInst(id){const o=D.inst.find(x=>x.id===id);if(!o)return;
+  if(o.fixada){o.fixada=0;await B.update("inst",id,{fixada:0});render();return;}
+  const n=D.inst.filter(x=>x.tipo===o.tipo&&instAno(x)===instAno(o)&&x.fixada).length;
+  if(n>=2)return toast("📌","Máximo de 2 fixadas","Desafixe uma para fixar outra.");
+  o.fixada=Date.now();await B.update("inst",id,{fixada:o.fixada});render();}
+function vInst(){const t=VIEW.t,ano=curAno(),L=D.inst.filter(i=>i.tipo===t&&instAno(i)===ano).sort(byPin),E=t==="escola"?"🏫":"🎓";
+  on(()=>{qa("[data-i]").forEach(b=>b.onclick=()=>go({v:"instd",id:b.dataset.i,t}));qa("[data-pin]").forEach(b=>b.onclick=()=>fixarInst(b.dataset.pin));$("fab").onclick=()=>instForm(null,t);qa("[data-y]").forEach(b=>b.onclick=()=>{VIEW.ano=b.dataset.y;localStorage.setItem("g3_ano",b.dataset.y);render();});$("lucBtn").onclick=()=>go({v:"lucros",ano});$("rdBtn").onclick=()=>leitor({tipo:t,ano});});
   return topBar(t==="escola"?"Planilhas das escolas":"Faculdades")+`<div class="years">${ANOS.map(y=>`<button class="yr ${y===ano?"on":""}" data-y="${y}"><b>${y}</b><span>${D.inst.filter(i=>i.tipo===t&&instAno(i)===y).length} ${t==="escola"?"escola(s)":"faculdade(s)"}</span></button>`).join("")}</div>
-  <div class="row" style="margin:4px 0 10px"><p class="muted small grow" style="margin:0">${org?"Use ▲ e ▼ para mudar a ordem.":t==="escola"?"Escolas de "+ano+". Toque para ver as turmas.":"Faculdades de "+ano+". Toque para ver as turmas."}</p>${L.length>1?`<button class="link" id="orgB">${org?"✓ Concluir":"↕ Organizar"}</button>`:""}</div>
-  ${L.length?`<div class="igrid">${L.map((i,k)=>{const ts=D.turmas.filter(x=>x.inst===i.id);let n=0,g=0;ts.forEach(x=>{const s=stats(x.id);n+=s.n;g+=s.g;});
-    return `<div class="icard"><button class="icb" data-i="${i.id}"><span class="e">${E}</span><b>${esc(i.nome)}</b><span class="tiny muted">${ts.length} turma(s) · ${n} aluno(s)${n?` · ${Math.round(g/n*100)}% quitados`:""}${i.cidade?" · "+esc(i.cidade):""}</span></button>${org?`<div class="mv2"><button data-mv="-1" data-id="${i.id}" ${k===0?"disabled":""} aria-label="Subir">▲</button><button data-mv="1" data-id="${i.id}" ${k===L.length-1?"disabled":""} aria-label="Descer">▼</button></div>`:""}</div>`;}).join("")}</div>`:`<p class="empty">Nenhuma ${t==="escola"?"escola":"faculdade"} cadastrada. Toque em ＋.</p>`}
+  <p class="muted small" style="margin:4px 0 10px">${t==="escola"?"Escolas de "+ano+". Toque numa escola para ver as turmas e as planilhas.":"Faculdades de "+ano+". Toque numa faculdade para ver as turmas e os alunos."} Use 📌 para deixar até 2 no topo.</p>
+  ${L.map(i=>{const ts=D.turmas.filter(x=>x.inst===i.id);let n=0,g=0;ts.forEach(x=>{const s=stats(x.id);n+=s.n;g+=s.g;});
+    return `<div class="irow"><button class="item ${i.fixada?"pinned":""}" data-i="${i.id}" style="padding-right:78px"><span class="e">${E}</span><div class="grow"><b>${esc(i.nome)}</b><span class="tiny muted">${ts.length} turma(s) · ${n} aluno(s)${n?` · ${Math.round(g/n*100)}% quitados`:""}${i.cidade?" · "+esc(i.cidade):""}</span></div><span class="chev">›</span></button><button class="pinb ${i.fixada?"on":""}" data-pin="${i.id}" aria-label="${i.fixada?"Desafixar":"Fixar no topo"}" title="${i.fixada?"Desafixar":"Fixar no topo"}">📌</button></div>`;}).join("")||`<p class="empty">Nenhuma ${t==="escola"?"escola":"faculdade"} cadastrada. Toque em ＋.</p>`}
   <button class="mini m2" id="rdBtn" title="Ler documento (foto, PDF ou planilha)" aria-label="Ler documento (foto, PDF ou planilha)">📷</button><button class="mini m1" id="lucBtn" title="Calculadora de lucros" aria-label="Calculadora de lucros">💰</button><button class="fab" id="fab" aria-label="Adicionar">＋</button>`;}
 function instForm(id,tipo){const i=id?D.inst.find(x=>x.id===id):{tipo,ano:curAno()};let ano=instAno(i);
   sheet(`<div class="grab"></div><h2>${id?"Editar":"Nova"} ${i.tipo==="escola"?"escola":"faculdade"}</h2><label class="fld"><span>Nome</span><input id="iN" maxlength="80" value="${esc(i.nome||"")}"></label><label class="fld"><span>Cidade (opcional)</span><input id="iC" maxlength="50" value="${esc(i.cidade||"")}"></label><div class="fld"><span>Ano das fotos</span><div class="seg" id="iA">${ANOS.map(y=>`<button data-v="${y}" aria-pressed="${y===ano}">${y}</button>`).join("")}</div></div>
   <div class="btns"><button class="btn full" id="iS">Salvar</button>${id?`<button class="btn ghost full" id="iD" style="color:var(--danger)">Excluir</button>`:""}</div>`);
   $("iA").onclick=e=>{const b=e.target.closest("button");if(!b)return;ano=b.dataset.v;qa("#iA button").forEach(x=>x.setAttribute("aria-pressed",x===b));};
-  $("iS").onclick=async()=>{const n=$("iN").value.trim();if(!n)return;const v={nome:n,cidade:$("iC").value.trim(),ano};if(id)await B.update("inst",id,v);else await B.add("inst",Object.assign(v,{tipo:i.tipo,autor:UID,criado:Date.now(),ordem:Math.max(0,...D.inst.filter(x=>x.tipo===i.tipo&&instAno(x)===ano).map(x=>x.ordem||0))+1}));closeSheet();};
+  $("iS").onclick=async()=>{const n=$("iN").value.trim();if(!n)return;const v={nome:n,cidade:$("iC").value.trim(),ano};if(id)await B.update("inst",id,v);else await B.add("inst",Object.assign(v,{tipo:i.tipo,autor:UID,criado:Date.now()}));closeSheet();};
   const d=$("iD");if(d)d.onclick=()=>{if(D.turmas.some(t=>t.inst===id))return toast("⚠️","Exclua as turmas antes","");if(confirm("Excluir?")){B.del("inst",id);closeSheet();back();}};}
 function vInstD(){const i=D.inst.find(x=>x.id===VIEW.id);if(!i)return topBar("Não encontrado")+'<p class="empty">Este item foi excluído.</p>';
   const ts=D.turmas.filter(x=>x.inst===i.id).sort((a,b)=>a.nome.localeCompare(b.nome,"pt",{numeric:true}));
@@ -752,7 +780,7 @@ function turmaForm(id,inst){const t=id?D.turmas.find(x=>x.id===id):{inst,modelo:
    const d=$("tD");if(d)d.onclick=()=>{const n=D.alunos.filter(a=>a.turma===id).length;if(confirm(`Excluir a turma e ${n} aluno(s)? Isso vale para toda a equipe.`)){D.alunos.filter(a=>a.turma===id).forEach(a=>B.del("alunos",a.id));B.del("turmas",id);closeSheet();back();}};};draw();}
 /* ---------- planilha ---------- */
 const ENVIO=[["Não enviado","r"],["Em andamento","o"],["Enviado","g"]];
-function columns(t){let c;if(t.modelo==="mensal")c=[{k:"nome",n:"Aluno",t:"text",fix:1},...(t.meses||[]).map((m,i)=>({k:"m"+i,n:m,t:"mes",i})),{k:"soma",n:"Soma das parcelas",t:"soma"},{k:"pagto",n:"Status",t:"pagto"},{k:"obs",n:"Observações",t:"long"}];
+function columns(t){let c;if(t.modelo==="mensal")c=[{k:"nome",n:"Aluno",t:"text",fix:1},{k:"contato",n:"Contato",t:"text"},...(t.meses||[]).map((m,i)=>({k:"m"+i,n:m,t:"mes",i})),{k:"soma",n:"Soma das parcelas",t:"soma"},{k:"pagto",n:"Status",t:"pagto"},{k:"obs",n:"Observações",t:"long"}];
   else c=[{k:"turmaTxt",n:"Turma",t:"text"},{k:"nome",n:"Nome completo",t:"text",fix:1},{k:"contato",n:"Contato",t:"text"},{k:"kit",n:"Kit",t:"kit"},{k:"pagto",n:"Status de pagamento",t:"pagto"},{k:"envio",n:"Envio das fotos",t:"envio"},
     {k:"pago",n:"Pago",t:"money"},{k:"total",n:"Total a pagar",t:"money"},{k:"placa",n:"Foto da placa confirmada",t:"yesno"},{k:"obs",n:"Observações",t:"long"}];
   c=c.filter(x=>x.fix||!(t.hide||[]).includes(x.k));(t.cols||[]).forEach(x=>c.push({k:"x_"+x.id,n:x.nome,t:"x",c:x}));return c;}
@@ -760,10 +788,10 @@ function payStatus(t,a){if(!t)return{c:"r",l:"—",pago:0,total:0};let pago,tota
   if(t.modelo==="mensal"){pago=(t.meses||[]).reduce((s,m,i)=>s+(Number((a.mes||{})["m"+i])||0),0);total=(t.parcela||0)*(t.meses||[]).length;}else{pago=Number(a.pago)||0;total=Number(a.total)||0;}
   if(total>0&&pago>=total)return{c:"g",l:"Pago",pago,total};if(pago>0)return{c:"o",l:total?`Parcial · ${Math.round(pago/total*100)}%`:"Pagamento registrado",pago,total};return{c:"r",l:"Não pago",pago,total};}
 function cellView(t,a,col){const v=k=>a[k];switch(col.t){
-  case"text":return{h:esc(v(col.k)||"")||(col.k==="turmaTxt"?esc(t.nome):'<span class="muted">—</span>')};
+  case"text":if(col.k==="contato"){const f=fmtFone(v("contato"));return{h:f?esc(f):'<span class="muted">—</span>'};}return{h:esc(v(col.k)||"")||(col.k==="turmaTxt"?esc(t.nome):'<span class="muted">—</span>')};
   case"long":return{h:esc((v(col.k)||"").slice(0,40))+((v(col.k)||"").length>40?"…":"")||'<span class="muted">—</span>'};
   case"money":return{h:R(v(col.k)),m:1};
-  case"kit":{const k=kits().find(x=>x.id===a.kit);return{h:k?esc(k.nome):'<span class="muted">Escolher</span>'};}
+  case"kit":return{h:kitChips(a)};
   case"pagto":{const s=payStatus(t,a);return{h:s.l,c:s.c};}
   case"envio":{const e=ENVIO.find(x=>x[0]===a.envio)||ENVIO[0];return{h:e[0],c:e[1]};}
   case"yesno":return a[col.k]==="Sim"?{h:"Sim",c:"g"}:a[col.k]==="Não"?{h:"Não",c:"r"}:{h:'<span class="muted">—</span>'};
@@ -774,7 +802,7 @@ function cellView(t,a,col){const v=k=>a[k];switch(col.t){
     return{h:esc((x||"").slice(0,40))||'<span class="muted">—</span>'};}}return{h:""};}
 function vTurma(){const t=D.turmas.find(x=>x.id===VIEW.id);if(!t)return topBar("Turma")+'<p class="empty">Esta turma foi excluída.</p>';VIEW._keep=1;
   const i=D.inst.find(x=>x.id===t.inst)||{};const q=(VIEW.q||"").toLowerCase();const cols=columns(t);
-  const al=D.alunos.filter(a=>a.turma===t.id).sort((a,b)=>(a.nome||"").localeCompare(b.nome||"","pt")).filter(a=>!q||(a.nome||"").toLowerCase().includes(q)||(a.contato||"").includes(q));
+  const al=D.alunos.filter(a=>a.turma===t.id).sort((a,b)=>(a.nome||"").localeCompare(b.nome||"","pt")).filter(a=>{const qd=q.replace(/\D/g,"");return !q||(a.nome||"").toLowerCase().includes(q)||(qd&&(a.contato||"").replace(/\D/g,"").includes(qd));});
   const s=stats(t.id);const sk=cols.findIndex(c=>c.k==="nome");
   on(()=>{$("q").oninput=e=>{VIEW.q=e.target.value;render();};$("aAdd").onclick=()=>addAlunos(t);$("rdT").onclick=()=>leitor({tipo:i.tipo||VIEW.t||"escola",inst:t.inst,turma:t.id,ano:instAno(i)});$("cols").onclick=()=>colsManager(t);$("tCfg").onclick=()=>turmaForm(t.id);$("csv").onclick=()=>exportMenu(t);
     qa(".sh [data-c]").forEach(b=>b.onclick=()=>{const [aid,k]=b.dataset.c.split("|");if(k==="nome"||k==="soma")openRow(t,aid);else editCell(t,aid,k);});});
@@ -783,13 +811,13 @@ function vTurma(){const t=D.turmas.find(x=>x.id===VIEW.id);if(!t)return topBar("
    <div><b><span class="st g">${s.g}</span> <span class="st o">${s.o}</span> <span class="st r">${s.r}</span></b><span>pago · parcial · não pago</span></div></div>
   <div class="tools"><input id="q" placeholder="🔎 Buscar aluno" value="${esc(VIEW.q||"")}"><button class="btn ghost sm" id="rdT" title="Ler lista (foto, PDF ou planilha)">📷</button><button class="btn ghost sm" id="aAdd">＋ Aluno</button><button class="btn ghost sm" id="cols">Colunas</button><button class="btn ghost sm" id="csv">⬇ Baixar</button></div>
   <div class="wrap"><table class="sh"><thead><tr>${cols.map((c,j)=>`<th class="${j===sk?"c0":""}">${esc(c.n)}</th>`).join("")}</tr></thead>
-  <tbody>${al.map(a=>`<tr>${cols.map((c,j)=>{const v=cellView(t,a,c);return `<td class="${j===sk?"c0":""} ${v.c||""}"><button data-c="${a.id}|${c.k}" class="${v.m?"money":""}">${v.h}</button></td>`;}).join("")}</tr>`).join("")}</tbody></table>
+  <tbody>${al.map(a=>`<tr>${cols.map((c,j)=>{const v=cellView(t,a,c);if(c.k==="contato"){const w=waLink(a.contato);if(w)return `<td><div class="cw"><a class="wa" href="${w}" target="_blank" rel="noopener" title="Abrir conversa no WhatsApp">💬 ${esc(fmtFone(a.contato))}</a><button class="ed" data-c="${a.id}|contato" aria-label="Editar contato">✎</button></div></td>`;}return `<td class="${j===sk?"c0":""} ${v.c||""}"><button data-c="${a.id}|${c.k}" class="${v.m?"money":""}">${v.h}</button></td>`;}).join("")}</tr>`).join("")}</tbody></table>
   ${al.length?"":'<p class="empty" style="padding:14px">Nenhum aluno. Toque em ＋ Aluno.</p>'}</div>
   <p class="tiny muted" style="margin-top:8px">Toque numa célula para editar. Toque no nome para ver a ficha completa. As cores mudam sozinhas: vermelho (não pago), laranja (parcial), verde (pago).</p>`;}
 function addAlunos(t){sheet(`<div class="grab"></div><h2>Adicionar alunos</h2><p class="small muted">Um nome por linha. Para incluir o contato, use “Nome; telefone”.</p>
   <label class="fld"><textarea id="aL" style="min-height:160px" placeholder="Ana Beatriz Bezerra; 88999990000&#10;João Gabriel da Silva"></textarea></label><div class="btns"><button class="btn full" id="aS">Adicionar</button></div>`);
   $("aS").onclick=async()=>{const ls=$("aL").value.split("\n").map(s=>s.trim()).filter(Boolean);if(!ls.length)return;
-    for(const l of ls){const [n,c]=l.split(";").map(x=>(x||"").trim());const v={turma:t.id,nome:n,contato:c||"",criado:Date.now(),autor:UID};if(t.modelo!=="mensal")Object.assign(v,{pago:0,total:0,envio:"Não enviado",placa:"",obs:"",kit:""});else Object.assign(v,{mes:{},obs:""});await B.add("alunos",v);}
+    for(const l of ls){const [n,c]=l.split(";").map(x=>(x||"").trim());const v={turma:t.id,nome:n,contato:c?(fmtFone(c)||c):"",criado:Date.now(),autor:UID};if(t.modelo!=="mensal")Object.assign(v,{pago:0,total:0,envio:"Não enviado",placa:"",obs:"",kit:"",kits:[]});else Object.assign(v,{mes:{},obs:""});await B.add("alunos",v);}
     closeSheet();toast("👥",`${ls.length} aluno(s) adicionado(s)`,"");};}
 function editCell(t,aid,k){const a=D.alunos.find(x=>x.id===aid);if(!a)return;const col=columns(t).find(c=>c.k===k)||{k,t:"text",n:k};const save=p=>B.update("alunos",aid,p);
   const head=`<div class="grab"></div><p class="tiny muted" style="margin:0">${esc(a.nome)}</p><h2>${esc(col.n)}</h2>`;
@@ -797,12 +825,14 @@ function editCell(t,aid,k){const a=D.alunos.find(x=>x.id===aid);if(!a)return;con
     qa(".sheet [data-o]").forEach(b=>b.onclick=()=>{fn(b.dataset.o);closeSheet();});$("oClr").onclick=()=>{fn("");closeSheet();};};
   const text=(cur,long,fn)=>{sheet(head+`<label class="fld">${long?`<textarea id="cV" style="min-height:140px">${esc(cur||"")}</textarea>`:`<input id="cV" value="${esc(cur||"")}">`}</label><div class="btns"><button class="btn full" id="cS">Salvar</button></div>`);setTimeout(()=>$("cV").focus(),50);
     $("cS").onclick=()=>{fn($("cV").value);closeSheet();};$("cV").onkeydown=e=>{if(e.key==="Enter"&&!long){fn($("cV").value);closeSheet();}};};
-  if(col.t==="text")return text(a[k]||(k==="turmaTxt"?t.nome:""),false,v=>save({[k]:v.trim()}));
+  if(col.t==="text")return text(k==="contato"?fmtFone(a[k]):(a[k]||(k==="turmaTxt"?t.nome:"")),false,v=>save({[k]:k==="contato"?(fmtFone(v)||v.trim()):v.trim()}));
   if(col.t==="long")return text(a[k],true,v=>save({[k]:v}));
-  if(col.t==="kit"){const ks=kits();sheet(head+(ks.length?ks.map(x=>`<button class="opt ${x.id===a.kit?"on":""}" data-k="${x.id}"><span class="grow">${esc(x.nome)}</span><span class="muted">${R(x.preco)}</span></button>`).join(""):'<p class="empty">Nenhum kit cadastrado ainda.</p>')+
-    `<div class="btns"><button class="btn ghost full" id="kM">⚙️ Cadastrar e editar kits</button><button class="link" id="kC">Sem kit</button></div>`);
-    qa(".sheet [data-k]").forEach(b=>b.onclick=()=>{const kt=ks.find(x=>x.id===b.dataset.k),old=ks.find(x=>x.id===a.kit);const p={kit:kt.id};if(!a.total||(old&&a.total===old.preco))p.total=kt.preco;save(p);closeSheet();});
-    $("kM").onclick=kitsManager;$("kC").onclick=()=>{save({kit:""});closeSheet();};return;}
+  if(col.t==="kit"){const ks=kits(),q={};kitIds(a).forEach(id=>{if(ks.some(x=>x.id===id))q[id]=(q[id]||0)+1;});const soma=()=>ks.reduce((s,x)=>s+(q[x.id]||0)*(Number(x.preco)||0),0),antes=soma();let upd=!a.total||!kitIds(a).length||Number(a.total)===antes;
+    const draw=()=>{sheet(head+`<p class="tiny muted" style="margin:0 0 8px">Pode escolher mais de um kit. Toque em ＋ para adicionar (o mesmo kit pode repetir) e em − para tirar.</p>`+(ks.map(x=>{const n=q[x.id]||0;return `<div class="opt ${n?"on":""}" style="cursor:default"><span class="kdot" style="--kc:${corKit(x)}"></span><span class="grow">${esc(x.nome)}<br><span class="tiny muted">${R(x.preco)}</span></span><button class="qb" data-m="${x.id}" ${n?"":"disabled"} aria-label="Tirar">−</button><b style="min-width:22px;text-align:center">${n}</b><button class="qb" data-p="${x.id}" aria-label="Adicionar">＋</button></div>`;}).join("")||'<p class="empty">Nenhum kit cadastrado ainda.</p>')+
+      `<div class="card small" style="margin-top:8px"><b>Soma dos kits: ${R(soma())}</b><label class="row" style="gap:8px;margin-top:6px"><input type="checkbox" id="kUp" ${upd?"checked":""} style="width:20px;height:20px"><span>Atualizar o total a pagar${a.total&&!upd?` (hoje: ${R(a.total)})`:""}</span></label></div><div class="btns"><button class="btn full" id="kOk">Salvar</button><button class="btn ghost full" id="kM">⚙️ Cadastrar e editar kits</button><button class="link" id="kC">Sem kit</button></div>`);
+      const keep=()=>{if($("kUp"))upd=$("kUp").checked;};qa(".sheet [data-p]").forEach(b=>b.onclick=()=>{keep();q[b.dataset.p]=(q[b.dataset.p]||0)+1;draw();});qa(".sheet [data-m]").forEach(b=>b.onclick=()=>{keep();q[b.dataset.m]=Math.max(0,(q[b.dataset.m]||0)-1);draw();});
+      $("kOk").onclick=()=>{keep();const ids=[];ks.forEach(x=>{for(let n=0;n<(q[x.id]||0);n++)ids.push(x.id);});const p={kits:ids,kit:ids[0]||""};if(upd)p.total=soma();save(p);closeSheet();};
+      $("kM").onclick=kitsManager;$("kC").onclick=()=>{save({kits:[],kit:""});closeSheet();};};draw();return;}
   if(col.t==="envio")return opts(ENVIO,a.envio,v=>save({envio:v||"Não enviado"}));
   if(col.t==="yesno")return opts([["Sim","g"],["Não","r"]],a[k],v=>save({[k]:v}));
   if(col.t==="money"||col.t==="pagto")return payDialog(t,a);
@@ -821,13 +851,13 @@ function payDialog(t,a){if(t.modelo==="mensal")return openRow(t,a.id);const s=pa
   <div class="btns"><button class="btn ghost full" id="pS">Salvar valores</button></div><p class="tiny muted">O status muda sozinho: vermelho sem pagamento, laranja com pagamento parcial e verde quando o valor pago chega ao total.</p>`);
   $("pAdd").onclick=()=>{const v=money($("pA").value);if(!v)return;B.update("alunos",a.id,{pago:Math.round(((Number(a.pago)||0)+v)*100)/100});closeSheet();toast("💰",`${R(v)} registrado`,a.nome);};
   $("pS").onclick=()=>{B.update("alunos",a.id,{pago:money($("pP").value),total:money($("pT").value)});closeSheet();};}
-function openRow(t,aid){const a=D.alunos.find(x=>x.id===aid);if(!a)return;const cols=columns(t);const tel=(a.contato||"").replace(/\D/g,"");
-  sheet(`<div class="grab"></div><h2>${esc(a.nome)}</h2>${tel.length>=10?`<div class="row" style="gap:8px;margin-bottom:8px"><a class="btn ghost sm" href="tel:${tel}">📞 Ligar</a><a class="btn ghost sm" href="https://wa.me/55${tel.replace(/^55/,"")}" target="_blank" rel="noopener">💬 WhatsApp</a></div>`:""}
+function openRow(t,aid){const a=D.alunos.find(x=>x.id===aid);if(!a)return;const cols=columns(t);const wl=waLink(a.contato),tel=wl?wl.replace("https://wa.me/",""):"";
+  sheet(`<div class="grab"></div><h2>${esc(a.nome)}</h2>${wl?`<div class="row" style="gap:8px;margin-bottom:8px"><a class="btn ghost sm" href="tel:+${tel}">📞 Ligar</a><a class="btn ghost sm" href="${wl}" target="_blank" rel="noopener">💬 WhatsApp</a></div>`:""}
   ${cols.filter(c=>c.k!=="soma").map(c=>{const v=cellView(t,a,c);return `<button class="opt" data-k="${c.k}"><span class="grow small muted">${esc(c.n)}</span><span class="${v.c?"st "+v.c:""}">${v.h}</span></button>`;}).join("")}
   <div class="btns"><button class="btn ghost full" id="rD" style="color:var(--danger)">Excluir aluno</button></div>`);
   qa(".sheet [data-k]").forEach(b=>b.onclick=()=>{const k=b.dataset.k;if(k==="nome")return editCell(t,aid,"nome");if(k==="pagto"&&t.modelo==="mensal")return;editCell(t,aid,k);});
   $("rD").onclick=()=>{if(confirm(`Excluir ${a.nome} da planilha?`)){B.del("alunos",aid);closeSheet();}};}
-function colsManager(t){const base=t.modelo==="mensal"?[["obs","Observações"]]:[["turmaTxt","Turma"],["contato","Contato"],["kit","Kit"],["pagto","Status de pagamento"],["envio","Envio das fotos"],["pago","Pago"],["total","Total a pagar"],["placa","Foto da placa confirmada"],["obs","Observações"]];
+function colsManager(t){const base=t.modelo==="mensal"?[["contato","Contato"],["obs","Observações"]]:[["turmaTxt","Turma"],["contato","Contato"],["kit","Kit"],["pagto","Status de pagamento"],["envio","Envio das fotos"],["pago","Pago"],["total","Total a pagar"],["placa","Foto da placa confirmada"],["obs","Observações"]];
   const hide=t.hide||[];const TIP={texto:"Texto livre",opcoes:"Opções",simnao:"Sim ou não",valor:"Valor (R$)",data:"Data"};
   sheet(`<div class="grab"></div><h2>Colunas</h2><p class="small muted">Mostre ou oculte as colunas padrão e crie colunas novas.</p>
   ${base.map(([k,n])=>`<button class="opt" data-h="${k}"><span class="grow">${n}</span><span class="st ${hide.includes(k)?"n":"g"}">${hide.includes(k)?"Oculta":"Visível"}</span></button>`).join("")}
@@ -852,15 +882,15 @@ function csv(t){const cols=columns(t),al=D.alunos.filter(a=>a.turma===t.id).sort
   const txt=h=>String(h).replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"');
   const rows=[cols.map(c=>c.n)].concat(al.map(a=>cols.map(c=>{if(c.t==="long")return a[c.k]||"";if(c.t==="x"&&(c.c.tipo==="texto"))return (a.x||{})[c.c.id]||"";return txt(cellView(t,a,c).h).replace("—","");})));
   const s="\ufeff"+rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(";")).join("\n");const l=document.createElement("a");l.href=URL.createObjectURL(new Blob([s],{type:"text/csv"}));l.download=`${t.nome}.csv`;document.body.appendChild(l);l.click();l.remove();toast("⬇️","Planilha exportada","Abra no Excel ou no Google Planilhas.");}
-function kitsManager(){const ks=kits().slice();const saveK=l=>B.set("config","team",Object.assign({},D.config.find(c=>c.id==="team")||{},{kits:l}));
+function kitsManager(){const ks=kitsComCor(kits().slice());const saveK=saveKitsList;
   sheet(`<div class="grab"></div><h2>Kits</h2><p class="small muted">Os kits aparecem na coluna “Kit” das planilhas. Ao escolher um kit, o total a pagar é preenchido com o preço. O custo entra na calculadora de lucros.</p>
-  ${ks.map(k=>`<button class="opt" data-k="${k.id}"><span class="grow">${esc(k.nome)}<br><span class="tiny muted">custo ${R(k.custo)} · lucro ${R((k.preco||0)-(k.custo||0))}</span></span><b>${R(k.preco)}</b></button>`).join("")||'<p class="empty">Nenhum kit ainda.</p>'}
+  ${kitsComCor(ks).map(k=>`<button class="opt" data-k="${k.id}"><span class="kdot" style="--kc:${corKit(k)};margin-right:8px"></span><span class="grow">${esc(k.nome)}<br><span class="tiny muted">custo ${R(k.custo)} · lucro ${R((k.preco||0)-(k.custo||0))}</span></span><b>${R(k.preco)}</b></button>`).join("")||'<p class="empty">Nenhum kit ainda.</p>'}
   <div class="row" style="gap:8px;margin-top:10px"><input id="kN" placeholder="Nome do kit" maxlength="40" style="flex:2;background:var(--sf2);border:1px solid var(--line);border-radius:12px;padding:10px"><input id="kP" placeholder="Preço" inputmode="decimal" style="flex:1;min-width:0;background:var(--sf2);border:1px solid var(--line);border-radius:12px;padding:10px"><input id="kCu" placeholder="Custo" inputmode="decimal" style="flex:1;min-width:0;background:var(--sf2);border:1px solid var(--line);border-radius:12px;padding:10px"></div>
   <div class="btns"><button class="btn full" id="kA">＋ Adicionar kit</button></div>`);
   $("kA").onclick=async()=>{const n=$("kN").value.trim();if(!n)return;ks.push({id:nid(),nome:n,preco:money($("kP").value),custo:money($("kCu").value)});await saveK(ks);kitsManager();};
   qa(".sheet [data-k]").forEach(b=>b.onclick=()=>{const k=ks.find(x=>x.id===b.dataset.k);sheet(`<div class="grab"></div><h2>Editar kit</h2><label class="fld"><span>Nome</span><input id="kN2" value="${esc(k.nome)}"></label><label class="fld"><span>Preço de venda (R$)</span><input id="kP2" inputmode="decimal" value="${String(k.preco).replace(".",",")}"></label><label class="fld"><span>Custo do pacote (R$)</span><input id="kC2" inputmode="decimal" value="${String(k.custo||0).replace(".",",")}"></label>
-    <div class="btns"><button class="btn full" id="kS2">Salvar</button><button class="btn ghost full" id="kD2" style="color:var(--danger)">Excluir kit</button></div>`);
-    $("kS2").onclick=async()=>{k.nome=$("kN2").value.trim()||k.nome;k.preco=money($("kP2").value);k.custo=money($("kC2").value);await saveK(ks);kitsManager();};$("kD2").onclick=async()=>{await saveK(ks.filter(x=>x.id!==k.id));kitsManager();};});}
+    <div class="lbl">Cor do kit</div><div class="swt" id="kCor">${PALETA.map(c=>`<button data-cor="${c}" class="${c===k.cor?"on":""}" style="background:${c}" aria-label="Cor"></button>`).join("")}</div><div class="btns"><button class="btn full" id="kS2">Salvar</button><button class="btn ghost full" id="kD2" style="color:var(--danger)">Excluir kit</button></div>`);
+    $("kCor").onclick=e=>{const b=e.target.closest("button");if(!b)return;k.cor=b.dataset.cor;qa("#kCor button").forEach(x=>x.classList.toggle("on",x===b));};$("kS2").onclick=async()=>{k.nome=$("kN2").value.trim()||k.nome;k.preco=money($("kP2").value);k.custo=money($("kC2").value);await saveK(ks);kitsManager();};$("kD2").onclick=async()=>{await saveK(ks.filter(x=>x.id!==k.id));kitsManager();};});}
 /* ================= METAS DA EMPRESA ================= */
 const MET={arrecadado:{n:"Arrecadação (R$)",ic:"💰",cat:"Financeiras",money:1,auto:1},lucro:{n:"Lucro aproximado (R$)",ic:"📈",cat:"Financeiras",money:1,auto:1},
  previsto:{n:"Receita prevista (R$ a receber no total)",ic:"🧾",cat:"Financeiras",money:1,auto:1},quitacao:{n:"% de alunos com pagamento quitado",ic:"✅",cat:"Financeiras",pct:1,auto:1},
@@ -968,14 +998,14 @@ function vAjustes(){on(()=>{$("aPf").onclick=()=>{sheet(`<div class="grab"></div
     const n=$("aNt");if(n)n.onclick=enableNotif;$("aTh").onclick=e=>{const b=e.target.closest("button");if(b)setTheme(b.dataset.v);};$("aOut").onclick=()=>{if(confirm("Sair da conta neste aparelho?")){STARTED=false;B.signOut();}};});
   const np="Notification" in window?Notification.permission:"unsupported";
   return topBar("Perfil e ajustes")+`<div class="card row" style="margin-top:14px">${avatar(UID,"ava lg")}<div class="grow"><b style="font-size:1.1rem">${esc(uname(UID))}</b><div class="muted small">${esc(ME.tel||"")}</div></div><button class="btn ghost sm" id="aPf">Editar</button></div>
-  <div class="lbl">Aparência</div><div class="seg" id="aTh">${[["leve","☁️ Leve"],["light","☀️ Dia"],["dark","🌙 Noite"],["auto","📱 Auto"]].map(([v,l])=>`<button data-v="${v}" aria-pressed="${THEME()===v}">${l}</button>`).join("")}</div>
+  <div class="lbl">Aparência</div><div class="seg" id="aTh">${[["leve","☀️ Claro"],["dark","🌙 Escuro"],["auto","📱 Auto"]].map(([v,l])=>`<button data-v="${v}" aria-pressed="${THEME()===v}">${l}</button>`).join("")}</div>
   <div class="lbl">Equipe e planilhas</div><button class="item" id="aKit"><span class="e">🎁</span><div class="grow"><b>Kits</b><span class="tiny muted">${kits().length} kit(s) cadastrados</span></div><span class="chev">›</span></button>
   <button class="item" id="aEq"><span class="e">👥</span><div class="grow"><b>Equipe</b><span class="tiny muted">${D.users.length} membro(s)</span></div><span class="chev">›</span></button>
   <div class="lbl">Notificações</div><div class="card small">${np==="granted"?"🔔 Ativadas neste aparelho.":np==="denied"?"🔕 Bloqueadas. Libere nas configurações do celular.":np==="unsupported"?"Este navegador não suporta notificações.":`<button class="btn full" id="aNt">🔔 Ativar notificações</button>`}
    <p class="tiny muted" style="margin:8px 0 0">${!B.demo&&CFG.vapidKey?"Avisos chegam mesmo com o app fechado.":"Os avisos chegam com o app aberto ou em segundo plano."}</p></div>
   <div class="lbl">Conta</div><button class="btn ghost full" id="aOut">Sair da conta</button>
   ${B.demo?`<div class="demo">Modo demonstração: dados só neste aparelho.</div>`:""}
-  <p class="tiny muted" style="text-align:center;margin-top:18px">G3 Formatura · versão 1.4</p>`;}
+  <p class="tiny muted" style="text-align:center;margin-top:18px">G3 Formatura · versão 1.9</p>`;}
 /* ================= LEITOR DE DOCUMENTOS ================= */
 const U_TESS="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js",U_PDFJS="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js",U_PDFW="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
 const nrm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9 ]+/g," ").replace(/\s+/g," ").trim();
@@ -998,21 +1028,55 @@ function limparNome(s){s=String(s||"").replace(/[|_¦\[\]{}()<>*=~^`"“”—�
   s=s.replace(/^[.\-'’ ]+|[.\-'’ ]+$/g,"");s=s.split(" ").map(quebraTok).join(" ");return tcase(s);}
 function nomeValido(s){if(!s)return false;const n=nrm(s),w=n.split(" ").filter(Boolean);if(n.length<3||w.length>9||!w.some(x=>x.length>=3))return false;if(NOTNAME.test(n))return false;
   if(/^(sim|nao|pago|parcial|r)$/.test(n))return false;return s.replace(/[^A-Za-zÀ-ÿ]/g,"").length/s.length>=0.7;}
-function achaCabecalho(rows){for(let i=0;i<Math.min(rows.length,14);i++){const map={};let achou=false;rows[i].forEach((c,j)=>{const n=nrm(c);if(!n)return;if(mesIdx(c)>=0){map[j]={f:"mes",mes:nrm(c).replace(/\d+/g,"").trim(),idx:mesIdx(c)};return;}
-    for(const [f,rx] of HK){if(rx.test(n)&&!Object.values(map).some(x=>x.f===f)){map[j]={f};if(f==="nome")achou=true;break;}}});if(achou)return{i,map};}return null;}
-function interpretar(rows){rows=rows.map(r=>r.map(c=>String(c==null?"":c).replace(/\s+/g," ").trim())).filter(r=>r.some(c=>c));
-  const topo=rows.slice(0,8).map(r=>r.join(" ")),titulo=topo.join(" · "),H=achaCabecalho(rows),items=[],seen=new Set();let meses=[];
-  const push=it=>{it.nome=limparNome(it.nome);if(!nomeValido(it.nome))return;const k=nrm(it.nome);if(seen.has(k))return;seen.add(k);items.push(it);};
-  if(H){meses=Object.values(H.map).filter(x=>x.f==="mes").sort((a,b)=>a.idx-b.idx).map(x=>x.mes);
-    rows.slice(H.i+1).forEach(r=>{const it={nome:"",contato:"",pago:0,total:0,kit:"",obs:"",mes:{}};let nome="";
-      Object.entries(H.map).forEach(([j,d])=>{const c=r[+j]||"";if(!c)return;if(d.f==="nome")nome=c;else if(d.f==="contato"){const dg=c.replace(/\D/g,"");if(dg.length>=10&&dg.length<=13&&!/,\d{2}\s*$/.test(c)&&!/R\$/.test(c))it.contato=c.replace(/[^\d()+\-\s]/g,"").trim();else if(/,\d{2}\s*$|R\$/.test(c)&&!it.total)it.total=money(c);}else if(d.f==="pago")it.pago=money(c);else if(d.f==="total")it.total=money(c);
-        else if(d.f==="kit")it.kit=c;else if(d.f==="obs")it.obs=c;else if(d.f==="mes"){const v=money(c);if(v)it.mes[d.mes]=v;}});it.nome=nome;push(it);});}
-  else rows.forEach(r=>{const j=r.join("  ");const ph=j.match(PHONE),ms=j.match(MONEYRX)||[];let cand=r.map(c=>c.replace(PHONE,"").replace(MONEYRX,"")).map(limparNome).filter(c=>c&&nomeValido(c));
-    if(!cand.length)return;cand.sort((a,b)=>b.length-a.length);const it={nome:cand[0],contato:ph&&ph[0].replace(/\D/g,"").replace(/^55(?=\d{10,11}$)/,"").length>=10?ph[0].trim():"",pago:0,total:0,kit:"",obs:"",mes:{}};
-    if(ms.length>=2){it.pago=money(ms[0]);it.total=money(ms[1]);}else if(ms.length===1)it.total=money(ms[0]);push(it);});
-  let escolaGuess="",turmaGuess="";const mt=titulo.match(/(?:escola|col[eé]gio|faculdade|universidade|instituto|centro educacional)\s+(?:municipal\s+|estadual\s+)?(?:de\s+)?(.+?)(?=\s+turma\b|\s+\d+\s*[ºo°ª]|\s*[-–|,;:·]\s|$)/i);if(mt)escolaGuess=tcase(mt[1].trim());
-  const a=titulo.match(/(\d{1,2}\s*[ºo°ª]\s*(?:ano|s[eé]rie)?\s*[A-Za-z])\b/i),b=titulo.match(/turma\s*[:\-–]?\s*([A-Za-z0-9ºª°]{1,4})\b/i);if(a)turmaGuess=a[1].replace(/\s+/g," ").replace(/o\b/i,"º").toUpperCase().replace("ANO","ano");else if(b)turmaGuess="Turma "+b[1].toUpperCase();
-  return{items,meses,titulo,escolaGuess,turmaGuess,header:!!H};}
+/* ---- interpretação: várias abas, várias turmas ---- */
+const STOPN=new Set(["da","de","do","das","dos","e"]);
+const toksN=s=>nrm(s).split(" ").filter(w=>w&&!STOPN.has(w));
+const lev1=(a,b)=>{if(a===b)return true;const la=a.length,lb=b.length;if(Math.abs(la-lb)>1||Math.min(la,lb)<4)return false;let i=0;while(i<la&&i<lb&&a[i]===b[i])i++;if(la===lb)return a.slice(i+1)===b.slice(i+1);return la>lb?a.slice(i+1)===b.slice(i):a.slice(i)===b.slice(i+1);};
+function simNome(a,b){const A=toksN(a),B=toksN(b);if(!A.length||!B.length)return 0;const used=new Set();let m=0;A.forEach(x=>{const k=B.findIndex((y,i)=>!used.has(i)&&lev1(x,y));if(k>=0){used.add(k);m++;}});return m/Math.max(A.length,B.length);}
+function turmaCore(t){const n=nrm(t);if(!n)return"";let m=n.match(/\b(\d{1,2})\s*(?:ano|serie)?\s*([a-z])\b/);if(m)return m[1]+m[2].toUpperCase();m=n.match(/\b(?:turma|classe|sala)\s+([a-z0-9]{1,3})\b/);return m?m[1].toUpperCase():"";}
+function turmaLabel(v){const c=turmaCore(v);if(c)return c;const s=String(v||"").replace(/^\s*(turma|classe|sala)\s*[:\-]?\s*/i,"").trim();return s&&s.length<=24?tcase(s):"";}
+function turmaNome(l){if(!l)return"";return /^\d{1,2}[A-Za-z]$/.test(l)||l.length<=2?"Turma "+l.toUpperCase():l;}
+function tituloTurma(r){const j=r.join(" ").trim(),n=nrm(j);if(!n||PHONE.test(j))return"";if(/\b(turma|classe|sala)\b/.test(n))return turmaCore(j);if(/^(alunos?\s+)?\d{1,2}\s*(ano|serie)?\s*[a-z]$/.test(n))return turmaCore(j);return"";}
+function achaCabecalhoLinha(r){const map={};let achou=false;r.forEach((c,j)=>{const n=nrm(c);if(!n)return;if(mesIdx(c)>=0){map[j]={f:"mes",mes:nrm(c).replace(/\d+/g,"").trim(),idx:mesIdx(c)};return;}
+  for(const [f,rx] of HK){if(rx.test(n)&&!Object.values(map).some(x=>x.f===f)){map[j]={f};if(f==="nome")achou=true;break;}}});return achou?map:null;}
+function itemDeLinha(r,H){const it={nome:"",contato:"",pago:0,total:0,kit:"",obs:"",mes:{}};
+  Object.entries(H).forEach(([j,d])=>{const c=r[+j]||"";if(!c)return;if(d.f==="nome")it.nome=c;
+    else if(d.f==="contato"){const dg=c.replace(/\D/g,"");if(dg.length>=8&&dg.length<=13&&!/,\d{2}\s*$/.test(c)&&!/R\$/.test(c))it.contato=fmtFone(c);else if(/,\d{2}\s*$|R\$/.test(c)&&!it.total)it.total=money(c);}
+    else if(d.f==="pago")it.pago=money(c);else if(d.f==="total")it.total=money(c);else if(d.f==="kit")it.kit=c;else if(d.f==="obs")it.obs=c;
+    else if(d.f==="mes"){const v=money(c);if(v)it.mes[d.mes]=v;}});return it;}
+function itemHeuristico(r){const j=r.join("  "),ph=j.match(PHONE),ms=j.match(MONEYRX)||[];const cand=r.map(c=>c.replace(PHONE,"").replace(MONEYRX,"")).map(limparNome).filter(c=>c&&nomeValido(c));if(!cand.length)return null;cand.sort((a,b)=>b.length-a.length);
+  const it={nome:cand[0],contato:ph&&ph[0].replace(/\D/g,"").replace(/^55(?=\d{10,11}$)/,"").length>=10?fmtFone(ph[0]):"",pago:0,total:0,kit:"",obs:"",mes:{}};if(ms.length>=2){it.pago=money(ms[0]);it.total=money(ms[1]);}else if(ms.length===1)it.total=money(ms[0]);return it;}
+/* uma folha (aba, página, foto) -> segmentos por turma */
+function interpretarFolha(rows0,nomeFolha){const rows=rows0.map(r=>r.map(c=>String(c==null?"":c).replace(/\s+/g," ").trim())).filter(r=>r.some(c=>c));
+  const sheetCore=turmaCore(nomeFolha),segs=new Map(),titulo=rows.slice(0,6).map(r=>r.join(" ")).join(" · ");
+  const seg=l=>{const k=(l||"").toLowerCase();let s=segs.get(k);if(!s){s={key:k,label:l||"",items:[],meses:[]};segs.set(k,s);}return s;};
+  const push=(l,it)=>{it.nome=limparNome(it.nome);if(!nomeValido(it.nome))return;seg(l).items.push(it);};
+  let H=null,cur=sheetCore,pend="",lastCol="",anyHeader=false;const sem=[];
+  for(const r of rows){const hm=achaCabecalhoLinha(r);
+    if(hm){H=hm;anyHeader=true;lastCol="";const nj=Object.keys(hm).find(j=>hm[j].f==="nome");cur=turmaCore(r[+nj])||pend||sheetCore||cur;pend="";
+      const sg=seg(cur);Object.entries(hm).filter(([j,d])=>d.f==="mes").sort((a,b)=>a[0]-b[0]).forEach(([j,d])=>{if(!sg.meses.includes(d.mes))sg.meses.push(d.mes);});continue;}
+    if(H){const nj=Object.keys(H).find(j=>H[j].f==="nome"),tj=Object.keys(H).find(j=>H[j].f==="turma");
+      if(!nomeValido(limparNome(r[+nj]||""))){const t=tituloTurma(r);if(t){cur=t;pend=t;}continue;}
+      let label=cur;if(tj!=null){const v=r[+tj]||"",l=v?turmaLabel(v):"";if(l)lastCol=l;label=lastCol||cur;}pend="";push(label,itemDeLinha(r,H));continue;}
+    const t=tituloTurma(r);if(t){cur=t;pend=t;continue;}sem.push({r,cur});}
+  if(!anyHeader)sem.forEach(({r,cur})=>{const it=itemHeuristico(r);if(it)push(cur,it);});
+  return{segs:[...segs.values()].filter(s=>s.items.length),titulo,anyHeader};}
+function melhorParecido(items,it,src){let best=null,bs=0.8;items.forEach(x=>{if(x.srcs.includes(src))return;const s=simNome(x.nome,it.nome);if(s>=bs){bs=s;best=x;}});return best;}
+function juntarItem(a,b,src){if(toksN(b.nome).length>toksN(a.nome).length)a.nome=b.nome;["contato","kit","obs"].forEach(k=>{if(!a[k]&&b[k])a[k]=b[k];});["pago","total"].forEach(k=>{if(!a[k]&&b[k])a[k]=b[k];});Object.entries(b.mes||{}).forEach(([m,v])=>{if(!a.mes[m])a.mes[m]=v;});a.srcs.push(src);}
+const moda=a=>{const c={};let b=0,bv=0;a.forEach(v=>{c[v]=(c[v]||0)+1;if(c[v]>b){b=c[v];bv=v;}});return bv;};
+function nomeArquivoEscola(n){const b=String(n||"").split(",")[0].replace(/\.[a-z0-9]+$/i,"").replace(/[_\-]+/g," ").replace(/\s+/g," ").trim();if(b.length<4||/^(img|image|imagem|foto|photo|scan|doc|lista|planilha|alunos|relacao|whatsapp|captura|screenshot|\d)/.test(nrm(b)))return"";return tcase(b);}
+function interpretar(sheets,opts){opts=opts||{};const folhas=sheets.map(s=>Object.assign({name:s.name||""},interpretarFolha(s.rows,s.name||"")));
+  const comH=folhas.some(f=>f.anyHeader),usadas=[],ignoradas=[];
+  folhas.forEach(f=>{const n=f.segs.reduce((a,x)=>a+x.items.length,0);if(!n)ignoradas.push({name:f.name,motivo:"sem alunos"});else if(comH&&!f.anyHeader)ignoradas.push({name:f.name,motivo:"sem coluna de nomes"});else usadas.push(f);});
+  const gm=new Map();
+  usadas.forEach(f=>f.segs.forEach(sg=>{let g=gm.get(sg.key);if(!g){g={key:sg.key,label:sg.label,items:[],meses:[],fontes:[]};gm.set(sg.key,g);}if(!g.fontes.includes(f.name))g.fontes.push(f.name);
+    sg.meses.forEach(m=>{if(!g.meses.includes(m))g.meses.push(m);});sg.items.forEach(it=>{it.srcs=[f.name];const alvo=melhorParecido(g.items,it,f.name);if(alvo)juntarItem(alvo,it,f.name);else g.items.push(it);});}));
+  const titulo=usadas.map(f=>f.titulo).join(" · ")+" · "+String(opts.arquivos||"").replace(/[_\-.]+/g," ");
+  const groups=[...gm.values()].sort((a,b)=>a.key.localeCompare(b.key,"pt",{numeric:true})).map(g=>{const vals=[];g.items.forEach(i=>Object.values(i.mes).forEach(v=>v>0&&vals.push(v)));
+    const nome=turmaNome(g.label)||(turmaCore(titulo)?turmaNome(turmaCore(titulo)):"");
+    return Object.assign(g,{nome,modelo:g.meses.length>=2||vals.length?"mensal":"formatura",parcela:vals.length?moda(vals):0});});
+  let escolaGuess="";const mt=titulo.match(/(?:escola|col[eé]gio|faculdade|universidade|instituto|centro educacional)\s+(?:municipal\s+|estadual\s+)?(?:de\s+)?(.+?)(?=\s+turma\b|\s+\d+\s*[ºo°ª]|\s*[-–|,;:·]\s|$)/i);if(mt)escolaGuess=tcase(mt[1].trim());if(!escolaGuess)escolaGuess=nomeArquivoEscola(opts.arquivos);
+  return{groups,ignoradas,titulo,escolaGuess,total:groups.reduce((a,g)=>a+g.items.length,0)};}
 function guessInst(res,insts){const T=nrm(res.titulo),STOP=new Set(["escola","colegio","municipal","estadual","professor","professora","prof","de","da","do","dos","das","e","ee","eef","emef","centro","educacional","instituto"]);let best=null,bs=0;
   insts.forEach(i=>{const tk=nrm(i.nome).split(" ").filter(w=>w.length>=3&&!STOP.has(w));if(!tk.length)return;if(tk.every(w=>T.includes(w))&&tk.length>=bs){bs=tk.length;best=i.id;}});return best;}
 function guessTurma(ts,g){if(!g)return"";const n=nrm(g);let t=ts.find(x=>nrm(x.nome)===n);if(t)return t.id;const last=n.split(" ").pop();if(last.length<=2){t=ts.find(x=>nrm(x.nome).split(" ").pop()===last&&nrm(x.nome).split(" ").slice(0,-1).join(" ")===n.split(" ").slice(0,-1).join(" "))||ts.find(x=>nrm(x.nome).split(" ").pop()===last);if(t)return t.id;}return"";}
@@ -1039,12 +1103,14 @@ async function rowsDePdf(file,prog){await loadLib(U_PDFJS);pdfjsLib.GlobalWorker
       lines.sort((a,b)=>b.y-a.y).forEach(L=>{L.its.sort((a,b)=>a.x-b.x);const cells=[];let cur="",end=null;L.its.forEach(t=>{if(end!=null&&t.x-end>Math.max(8,t.h*1.3)){cells.push(cur);cur=t.s;}else cur+=(cur&&end!=null&&t.x-end>1?" ":"")+t.s;end=t.x+t.w;});if(cur.trim())cells.push(cur);out.push(cells);});}
     else{const vp0=pg.getViewport({scale:1}),vp=pg.getViewport({scale:Math.min(3,2200/vp0.width)}),cv=document.createElement("canvas");cv.width=vp.width;cv.height=vp.height;await pg.render({canvasContext:cv.getContext("2d"),viewport:vp}).promise;
       out.push(...await ocrCanvas(cv,(t,q)=>prog(`Página ${p} de ${N}: ${t}`,(p-1+q)/N)));}}return out;}
-async function rowsDeArquivo(f,prog){const nm=(f.name||"").toLowerCase(),ty=f.type||"";
-  if(/\.(xlsx|xls|ods|xlsm)$/.test(nm)){prog("Abrindo planilha…",.3);await loadLib(U_XL);const wb=XLSX.read(await f.arrayBuffer(),{type:"array"});let best=[];wb.SheetNames.forEach(s=>{const r=XLSX.utils.sheet_to_json(wb.Sheets[s],{header:1,raw:false,defval:""});if(r.length>best.length)best=r;});return best;}
-  if(/\.(csv|tsv|txt)$/.test(nm)||/text\//.test(ty)){prog("Lendo arquivo…",.3);const t=await f.text();return /\.txt$/.test(nm)&&!/[;\t,]/.test(t.slice(0,300))?textoParaLinhas(t):parseCSVTxt(t);}
-  if(/\.pdf$/.test(nm)||ty==="application/pdf")return rowsDePdf(f,prog);
-  if(/^image\//.test(ty)||/\.(jpe?g|png|webp|heic|heif|bmp|gif)$/.test(nm)){prog("Ajustando a imagem…",.1);const cv=await prepararImagem(f);return ocrCanvas(cv,prog);}
+async function rowsDeArquivo(f,prog){const nm=(f.name||"").toLowerCase(),ty=f.type||"",base=(f.name||"").replace(/\.[a-z0-9]+$/i,"");
+  if(/\.(xlsx|xls|ods|xlsm)$/.test(nm)){prog("Abrindo planilha…",.3);await loadLib(U_XL);const wb=XLSX.read(await f.arrayBuffer(),{type:"array"});
+    return wb.SheetNames.map(n=>({name:n,rows:XLSX.utils.sheet_to_json(wb.Sheets[n],{header:1,raw:false,defval:""})})).filter(x=>x.rows.length);}
+  if(/\.(csv|tsv|txt)$/.test(nm)||/text\//.test(ty)){prog("Lendo arquivo…",.3);const t=await f.text();return [{name:base,rows:/\.txt$/.test(nm)&&!/[;\t,]/.test(t.slice(0,300))?textoParaLinhas(t):parseCSVTxt(t)}];}
+  if(/\.pdf$/.test(nm)||ty==="application/pdf")return [{name:base,rows:await rowsDePdf(f,prog)}];
+  if(/^image\//.test(ty)||/\.(jpe?g|png|webp|heic|heif|bmp|gif)$/.test(nm)){prog("Ajustando a imagem…",.1);const cv=await prepararImagem(f);return [{name:base,rows:await ocrCanvas(cv,prog)}];}
   throw new Error("Tipo de arquivo não suportado: "+(f.name||""));}
+
 /* ---- telas ---- */
 let RD={};
 function leitor(ctx){RD={ctx:ctx||{}};sheet(`<div class="grab"></div><h2>📷 Ler documento</h2><p class="small muted">Fotografe a lista ou anexe o arquivo. O G3 lê os nomes e monta a lista para você conferir antes de salvar. A leitura das fotos acontece no seu aparelho.</p>
@@ -1055,43 +1121,75 @@ function leitor(ctx){RD={ctx:ctx||{}};sheet(`<div class="grab"></div><h2>📷 Le
   ["rdCam","rdImg","rdDoc"].forEach(id=>$(id).onchange=e=>{const fs=[...e.target.files];if(fs.length)lerArquivos(fs);});}
 async function lerArquivos(fs){const prog=(t,p)=>{const el=$("rdP");if(!el)return;el.querySelector("span").textContent=t;el.querySelector(".bar i").style.width=Math.max(3,Math.round((p||0)*100))+"%";};
   sheet(`<div class="grab"></div><h2>Lendo documento…</h2><div id="rdP"><p class="small muted"><span>Preparando…</span></p><div class="bar"><i style="width:3%"></i></div></div><p class="tiny muted">Na primeira foto o app baixa o reconhecimento de texto (alguns segundos, com internet). Depois fica mais rápido.</p>`);
-  let rows=[];try{for(let i=0;i<fs.length;i++)rows=rows.concat(await rowsDeArquivo(fs[i],(t,p)=>prog((fs.length>1?`Arquivo ${i+1}/${fs.length} · `:"")+t,(i+(p||0))/fs.length)));}
+  let sheets=[];try{for(let i=0;i<fs.length;i++)sheets=sheets.concat(await rowsDeArquivo(fs[i],(t,p)=>prog((fs.length>1?`Arquivo ${i+1}/${fs.length} · `:"")+t,(i+(p||0))/fs.length)));}
   catch(e){console.warn(e);const off=/offline|Failed to fetch|NetworkError|Load failed/i.test((e&&e.message)||"");toast("⚠️","Não consegui ler o arquivo",off?"Conecte-se à internet para ler fotos e PDFs.":(e&&e.message)||"Tente outra foto ou arquivo.");return leitor(RD.ctx);}
-  const res=interpretar(rows);res.arquivos=fs.map(f=>f.name).filter(Boolean).join(", ");if(!res.items.length){toast("🔍","Não encontrei nomes","Tente uma foto mais reta e nítida, ou um PDF/planilha.");return leitor(RD.ctx);}reviewLeitura(res);}
-function reviewLeitura(res){const ctx=RD.ctx,tipo=ctx.tipo||"escola",ano=ctx.ano||curAno();const insts=D.inst.filter(i=>i.tipo===tipo&&instAno(i)===ano).sort(byName);
-  if(!RD.dest){const inst=ctx.inst||guessInst(res,insts)||"",ts=D.turmas.filter(t=>t.inst===inst);RD.dest={inst,newInst:res.escolaGuess||"",turma:ctx.turma||(inst?guessTurma(ts,res.turmaGuess):""),newTurma:res.turmaGuess||"",modelo:res.meses.length>=2?"mensal":"formatura"};}
-  RD.res=res;if(!RD.items)RD.items=res.items.map(x=>Object.assign({on:true},x));
-  const d=RD.dest,sync=()=>{qa("[data-ck]").forEach(c=>{const it=RD.items[+c.dataset.ck];it.on=c.checked;});qa("[data-nm]").forEach(i=>RD.items[+i.dataset.nm].nome=i.value);qa("[data-ct]").forEach(i=>RD.items[+i.dataset.ct].contato=i.value);
-    if($("rdI"))d.inst=$("rdI").value;if($("rdNI"))d.newInst=$("rdNI").value;if($("rdT"))d.turma=$("rdT").value;if($("rdNT"))d.newTurma=$("rdNT").value;};
-  const draw=()=>{const ts=D.turmas.filter(t=>t.inst===d.inst).sort((a,b)=>a.nome.localeCompare(b.nome,"pt",{numeric:true})),tur=d.turma?D.turmas.find(t=>t.id===d.turma):null,ex=tur?D.alunos.filter(a=>a.turma===tur.id):[],exm=new Map(ex.map(a=>[nrm(a.nome),a]));
-    RD.items.forEach(it=>{const nd=exm.has(nrm(it.nome))?exm.get(nrm(it.nome)).id:"";if(it._d===undefined||it._d!==!!nd)it.on=!nd;it._d=!!nd;it.dup=nd;});const nN=RD.items.filter(i=>i.on&&!i.dup).length,nU=RD.items.filter(i=>i.on&&i.dup).length,nd=RD.items.filter(i=>i.dup).length;
-    sheet(`<div class="grab"></div><h2>Conferir a lista</h2><p class="small muted" style="margin:0 0 8px">${RD.items.length} nome(s) encontrados${res.arquivos?" em "+esc(res.arquivos):""}${nd?` · ${nd} já na turma`:""}. Corrija o que precisar antes de salvar.</p>
-     ${ctx.turma?`<div class="card small">Turma: <b>${esc(tur?tur.nome:"")}</b></div>`:`${ctx.inst?"":`<label class="fld"><span>${tipo==="escola"?"Escola":"Faculdade"}</span><select id="rdI">${insts.map(i=>`<option value="${i.id}" ${i.id===d.inst?"selected":""}>${esc(i.nome)}</option>`).join("")}<option value="" ${!d.inst?"selected":""}>＋ Nova ${tipo==="escola"?"escola":"faculdade"}</option></select></label>${d.inst?"":`<label class="fld"><span>Nome da nova ${tipo==="escola"?"escola":"faculdade"}</span><input id="rdNI" maxlength="80" value="${esc(d.newInst)}"></label>`}`}
-      <label class="fld"><span>Turma</span><select id="rdT">${ts.map(t=>`<option value="${t.id}" ${t.id===d.turma?"selected":""}>${esc(t.nome)}</option>`).join("")}<option value="" ${!d.turma?"selected":""}>＋ Nova turma</option></select></label>
-      ${d.turma?"":`<label class="fld"><span>Nome da nova turma</span><input id="rdNT" maxlength="40" value="${esc(d.newTurma)}" placeholder="Ex.: Turma B"></label><div class="fld"><span>Modelo da planilha</span><div class="seg" id="rdM"><button data-v="formatura" aria-pressed="${d.modelo==="formatura"}">Formatura e kits</button><button data-v="mensal" aria-pressed="${d.modelo==="mensal"}">Mensalidades</button></div></div>`}`}
-     <div class="row" style="margin:6px 0 2px"><button class="link" id="rdAll">Marcar todos</button><button class="link" id="rdNone">Desmarcar todos</button></div>
-     ${RD.items.map((it,i)=>`<div class="rdr ${it.dup?"dup":""}"><input type="checkbox" data-ck="${i}" ${it.on?"checked":""} aria-label="Incluir"><input type="text" data-nm="${i}" value="${esc(it.nome)}" aria-label="Nome">
-       <div class="sub"><input type="text" data-ct="${i}" value="${esc(it.contato)}" placeholder="contato (opcional)" inputmode="tel">${it.dup?'<span class="st o">já existe · marque para atualizar</span>':""}${it.total?`<span class="st n">total ${R(it.total)}</span>`:""}${it.pago?`<span class="st g">pago ${R(it.pago)}</span>`:""}${it.kit?`<span class="st n">${esc(it.kit)}</span>`:""}</div></div>`).join("")}
-     <div class="btns" style="position:sticky;bottom:0;background:var(--sf);padding-top:8px"><button class="btn full" id="rdGo" ${nN+nU?"":"disabled"}>${nN?`Adicionar ${nN} aluno(s)`:""}${nN&&nU?" e ":""}${nU?`${nN?"atualizar":"Atualizar"} ${nU}`:""}${nN+nU?"":"Nenhum nome marcado"}</button><button class="btn ghost full" id="rdBack">Ler outro arquivo</button></div>`);
-    const re=()=>{sync();draw();};const g=id=>$(id);if(g("rdI"))g("rdI").onchange=()=>{sync();d.turma=guessTurma(D.turmas.filter(t=>t.inst===d.inst),res.turmaGuess);draw();};
-    if(g("rdT"))g("rdT").onchange=re;if(g("rdM"))g("rdM").onclick=e=>{const b=e.target.closest("button");if(!b)return;sync();d.modelo=b.dataset.v;draw();};
-    qa("[data-ck]").forEach(c=>c.onchange=()=>{sync();const nn=RD.items.filter(i=>i.on&&!i.dup).length,nu=RD.items.filter(i=>i.on&&i.dup).length;$("rdGo").disabled=!(nn+nu);$("rdGo").textContent=nn+nu?`${nn?`Adicionar ${nn} aluno(s)`:""}${nn&&nu?" e ":""}${nu?`${nn?"atualizar":"Atualizar"} ${nu}`:""}`:"Nenhum nome marcado";});
-    $("rdAll").onclick=()=>{sync();RD.items.forEach(i=>i.on=true);draw();};$("rdNone").onclick=()=>{sync();RD.items.forEach(i=>i.on=false);draw();};$("rdBack").onclick=()=>{RD.items=null;RD.dest=null;leitor(ctx);};$("rdGo").onclick=()=>{sync();salvarLeitura();};};draw();}
-async function salvarLeitura(){const ctx=RD.ctx,d=RD.dest,res=RD.res,tipo=ctx.tipo||"escola",ano=ctx.ano||curAno();const btn=$("rdGo");if(btn)btn.disabled=true;
-  try{let inst=ctx.inst||d.inst;if(!inst){const nm=(d.newInst||"").trim();if(!nm){if(btn)btn.disabled=false;return toast("⚠️","Dê um nome à "+(tipo==="escola"?"escola":"faculdade"),"");}inst=await B.add("inst",{nome:nm,tipo,ano,cidade:"",autor:UID,criado:Date.now()});}
-    let t,turma=ctx.turma||d.turma;if(turma)t=D.turmas.find(x=>x.id===turma);
-    if(!t){const nm=(d.newTurma||"").trim();if(!nm){if(btn)btn.disabled=false;return toast("⚠️","Dê um nome à turma","");}const tv={nome:nm,inst,modelo:d.modelo,cols:[],hide:[],criado:Date.now(),autor:UID};
-      if(d.modelo==="mensal"){tv.meses=res.meses.length?res.meses.map(m=>MES[mesIdx(m)]?MES[mesIdx(m)].charAt(0).toUpperCase()+MES[mesIdx(m)].slice(1):m):MESES_PAD.split(", ");tv.parcela=0;tv.custoAluno=0;}
-      turma=await B.add("turmas",tv);t=Object.assign({id:turma},tv);}
-    const ex=new Map(D.alunos.filter(a=>a.turma===t.id).map(a=>[nrm(a.nome),a])),ks=kits();let nA=0,nU=0;
-    for(const it of RD.items){if(!it.on)continue;const nome=limparNome(it.nome)||it.nome.trim();if(!nome)continue;const old=ex.get(nrm(nome));const extra={};
-      if(it.contato&&it.contato.trim())extra.contato=it.contato.trim();if(it.obs)extra.obs=it.obs;
-      if(t.modelo==="mensal"){const mm={};(t.meses||[]).forEach((m,i)=>{const v=it.mes[nrm(m)]||it.mes[nrm(m).slice(0,3)];if(v)mm["m"+i]=v;});if(Object.keys(mm).length)extra.mes=mm;}
-      else{if(it.pago)extra.pago=it.pago;if(it.total)extra.total=it.total;const k=it.kit?ks.find(x=>nrm(x.nome)===nrm(it.kit)):null;if(k){extra.kit=k.id;if(!extra.total)extra.total=k.preco;}}
-      if(old){if(Object.keys(extra).length){await B.update("alunos",old.id,extra);nU++;}}
-      else{const v={turma:t.id,nome,contato:"",criado:Date.now(),autor:UID};if(t.modelo!=="mensal")Object.assign(v,{pago:0,total:0,envio:"Não enviado",placa:"",obs:"",kit:""});else Object.assign(v,{mes:{},obs:""});await B.add("alunos",Object.assign(v,extra));nA++;ex.set(nrm(nome),{id:"x"});}}
-    closeSheet();RD={};toast("✅",`${nA} aluno(s) adicionado(s)${nU?` · ${nU} atualizado(s)`:""}`,`Turma ${t.nome}`);if(!ctx.turma)go({v:"turma",id:t.id,t:tipo});}
-  catch(e){console.warn(e);if(btn)btn.disabled=false;toast("⚠️","Não foi possível salvar",(e&&e.message)||"Tente de novo.");}}
+  const res=interpretar(sheets,{arquivos:fs.map(f=>f.name).filter(Boolean).join(", ")});res.arquivos=fs.map(f=>f.name).filter(Boolean).join(", ");
+  if(!res.groups.length){toast("🔍","Não encontrei nomes","Tente uma foto mais reta e nítida, ou um PDF/planilha.");return leitor(RD.ctx);}RD.dest=null;RD.groups=null;reviewLeitura(res);}
+const turmaKey=n=>(turmaCore(n)||nrm(n)).toLowerCase();
+function acharTurma(ts,g){const k=g.key||turmaKey(g.nome);let t=k?ts.find(x=>turmaKey(x.nome)===k):null;if(!t&&g.nome)t=ts.find(x=>nrm(x.nome)===nrm(g.nome));return t?t.id:"";}
+function acharExistente(arr,nome){const n=nrm(nome);let a=arr.find(x=>nrm(x.nome)===n);if(a)return a;let best=null,bs=0.85;arr.forEach(x=>{const s=simNome(x.nome,nome);if(s>=bs){bs=s;best=x;}});return best;}
+const kitNomes=t=>String(t||"").split(/\s*[+;|\/]\s*|\s*,\s*/).map(x=>x.trim()).filter(Boolean);
+function kitsNovos(){const ks=new Set(kits().map(k=>nrm(k.nome))),m=new Map();
+  RD.groups.forEach(g=>{if(!g.on)return;const t=g.turma?D.turmas.find(x=>x.id===g.turma):null;if((t?t.modelo:g.modelo)==="mensal")return;
+    g.items.forEach(it=>{if(!it.on||it.dup||!it.kit)return;const ns=kitNomes(it.kit);ns.forEach(nm=>{const k=nrm(nm);if(!k||ks.has(k))return;const e=m.get(k)||{nome:tcase(nm),tot:[],n:0};e.n++;if(it.total&&ns.length===1)e.tot.push(it.total);m.set(k,e);});});});
+  m.forEach(e=>{e.preco=e.tot.length?moda(e.tot):0;});return m;}
+function reviewLeitura(res){const ctx=RD.ctx,tipo=ctx.tipo||"escola",ano=ctx.ano||curAno(),insts=D.inst.filter(i=>i.tipo===tipo&&instAno(i)===ano).sort(byName);
+  const turmasDe=i=>D.turmas.filter(t=>t.inst===i).sort((a,b)=>a.nome.localeCompare(b.nome,"pt",{numeric:true}));
+  if(!RD.dest){const inst=ctx.inst||(ctx.turma?"":guessInst(res,insts))||"";RD.dest={inst,newInst:res.escolaGuess||""};}
+  RD.res=res;const d=RD.dest,instFix=ctx.inst||(ctx.turma?(D.turmas.find(x=>x.id===ctx.turma)||{}).inst:"")||"";
+  if(!RD.groups){RD.groups=res.groups.map((g,gi)=>({gi,key:g.key,nome:g.nome,modelo:g.modelo,meses:g.meses,parcela:g.parcela,fontes:g.fontes,turma:"",novo:g.nome,on:true,open:res.groups.length===1,items:g.items.map(it=>Object.assign({on:true},it))}));
+    if(ctx.turma){const t=D.turmas.find(x=>x.id===ctx.turma),k=t?turmaKey(t.nome):"";RD.groups.forEach(g=>{g.on=false;g.turma=ctx.turma;});const m=RD.groups.find(g=>g.key===k)||(RD.groups.length===1?RD.groups[0]:null);if(m)m.on=true;}
+    else RD.groups.forEach(g=>{g.turma=acharTurma(turmasDe(d.inst),g);});RD.criarKits=true;}
+  const sync=()=>{qa("[data-gon]").forEach(c=>{RD.groups[+c.dataset.gon].on=c.checked;});qa("[data-gnm]").forEach(i=>RD.groups[+i.dataset.gnm].novo=i.value);qa("[data-gdest]").forEach(s=>RD.groups[+s.dataset.gdest].turma=s.value);qa("[data-gd]").forEach(x=>RD.groups[+x.dataset.gd].open=x.open);
+    qa("[data-ck]").forEach(c=>{const [g,i]=c.dataset.ck.split(":");RD.groups[+g].items[+i].on=c.checked;});qa("[data-nm]").forEach(c=>{const [g,i]=c.dataset.nm.split(":");RD.groups[+g].items[+i].nome=c.value;});qa("[data-ct]").forEach(c=>{const [g,i]=c.dataset.ct.split(":");RD.groups[+g].items[+i].contato=fmtFone(c.value)||c.value.trim();});
+    if($("rdI"))d.inst=$("rdI").value;if($("rdNI"))d.newInst=$("rdNI").value;if($("rdKit"))RD.criarKits=$("rdKit").checked;};
+  const draw=()=>{const ts=turmasDe(instFix||d.inst);let nN=0,nU=0,nG=0;
+    RD.groups.forEach(g=>{const tur=g.turma?D.turmas.find(t=>t.id===g.turma):null,ex=tur?D.alunos.filter(a=>a.turma===tur.id):[];g.tur=tur;g.model=tur?tur.modelo:g.modelo;
+      g.items.forEach(it=>{const e=ex.length?acharExistente(ex,it.nome):null,nd=e?e.id:"";if(it._d===undefined||it._d!==!!nd)it.on=!nd;it._d=!!nd;it.dup=nd;});
+      if(g.on){nG++;g.items.forEach(it=>{if(it.on){if(it.dup)nU++;else nN++;}});}});
+    const kn=kitsNovos(),tot=RD.groups.reduce((a,g)=>a+g.items.length,0);
+    const itRow=(g,i,it)=>`<div class="rdr ${it.dup?"dup":""}"><input type="checkbox" data-ck="${g.gi}:${i}" ${it.on?"checked":""} aria-label="Incluir"><input type="text" data-nm="${g.gi}:${i}" value="${esc(it.nome)}" aria-label="Nome">
+      <div class="sub"><input type="text" data-ct="${g.gi}:${i}" value="${esc(it.contato)}" placeholder="contato" inputmode="tel">${it.dup?'<span class="st o">já existe · marque p/ atualizar</span>':""}${it.kit?`<span class="st n">${esc(it.kit)}</span>`:""}${it.total?`<span class="st n">${R(it.total)}</span>`:""}${it.pago?`<span class="st g">pago ${R(it.pago)}</span>`:""}${Object.keys(it.mes||{}).length?`<span class="st g">${Object.keys(it.mes).length} mês(es)</span>`:""}${(it.srcs||[]).length>1?`<span class="st n">${esc(it.srcs.join(" + "))}</span>`:""}</div></div>`;
+    sheet(`<div class="grab"></div><h2>Conferir o que foi lido</h2><p class="small muted" style="margin:0 0 8px">${RD.groups.length} turma(s) · ${tot} aluno(s)${res.arquivos?" · "+esc(res.arquivos):""}. Cada turma vai separada. Corrija o que precisar antes de salvar.</p>
+     ${res.ignoradas.length?`<p class="tiny muted" style="margin:0 0 8px">Abas ignoradas: ${res.ignoradas.map(x=>esc(x.name)+" ("+x.motivo+")").join(", ")}.</p>`:""}
+     ${instFix?"":`<label class="fld"><span>${tipo==="escola"?"Escola":"Faculdade"}</span><select id="rdI">${insts.map(i=>`<option value="${i.id}" ${i.id===d.inst?"selected":""}>${esc(i.nome)}</option>`).join("")}<option value="" ${!d.inst?"selected":""}>＋ Nova ${tipo==="escola"?"escola":"faculdade"}</option></select></label>${d.inst?"":`<label class="fld"><span>Nome da nova ${tipo==="escola"?"escola":"faculdade"}</span><input id="rdNI" maxlength="80" value="${esc(d.newInst)}"></label>`}`}
+     ${ctx.turma&&RD.groups.length>1?`<p class="small" style="color:var(--org)">Este arquivo tem várias turmas. Marque a que vai nesta turma.</p>`:""}
+     ${RD.groups.map(g=>`<div class="card" style="margin:8px 0;padding:10px"><label class="row" style="gap:8px"><input type="checkbox" data-gon="${g.gi}" ${g.on?"checked":""} style="width:22px;height:22px;accent-color:var(--gold)"><b class="grow">${esc((g.tur?g.tur.nome:g.novo)||"Turma sem nome")}</b><span class="st n">${g.items.length} aluno(s)</span></label>
+       <div class="tiny muted" style="margin:3px 0 6px 30px">${g.model==="mensal"?"Mensalidades"+(g.meses.length?" · "+g.meses.length+" meses":""):"Formatura e kits"}${g.fontes.length>1?" · de "+esc(g.fontes.join(" + ")):""}</div>
+       ${ctx.turma?"":`<label class="fld" style="margin:0 0 6px"><span>Vai para</span><select data-gdest="${g.gi}">${ts.map(t=>`<option value="${t.id}" ${t.id===g.turma?"selected":""}>${esc(t.nome)}</option>`).join("")}<option value="" ${!g.turma?"selected":""}>＋ Nova turma</option></select></label>
+       ${g.turma?"":`<label class="fld" style="margin:0 0 6px"><span>Nome da turma</span><input data-gnm="${g.gi}" maxlength="40" value="${esc(g.novo)}" placeholder="Ex.: Turma 3A"></label><div class="seg" data-gmod="${g.gi}" style="margin-bottom:6px"><button data-v="formatura" aria-pressed="${g.modelo==="formatura"}">Formatura e kits</button><button data-v="mensal" aria-pressed="${g.modelo==="mensal"}">Mensalidades</button></div>`}`}
+       <details data-gd="${g.gi}" ${g.open?"open":""}><summary class="small" style="cursor:pointer">Ver e editar alunos</summary>${g.items.map((it,i)=>itRow(g,i,it)).join("")}</details></div>`).join("")}
+     ${kn.size?`<div class="card" style="margin:8px 0;padding:10px"><label class="row" style="gap:8px"><input type="checkbox" id="rdKit" ${RD.criarKits?"checked":""} style="width:22px;height:22px;accent-color:var(--gold)"><span class="grow small"><b>Cadastrar kits novos</b><br><span class="tiny muted">${[...kn.values()].map(k=>`${esc(k.nome)} (${k.preco?R(k.preco):"sem preço"} · ${k.n})`).join(" · ")}. O custo fica em branco, ajuste em Kits. Desmarcado, o nome do kit vai para as observações.</span></span></label></div>`:""}
+     <div class="btns" style="position:sticky;bottom:0;background:var(--sf);padding-top:8px"><button class="btn full" id="rdGo" ${nN+nU?"":"disabled"}>${nN+nU?`${nN?`Adicionar ${nN} aluno(s)`:""}${nN&&nU?" e ":""}${nU?`${nN?"atualizar":"Atualizar"} ${nU}`:""} · ${nG} turma(s)`:"Nenhum aluno marcado"}</button><button class="btn ghost full" id="rdBack">Ler outro arquivo</button></div>`);
+    const re=()=>{sync();draw();},g=id=>$(id);
+    if(g("rdI"))g("rdI").onchange=()=>{sync();RD.groups.forEach(x=>{x.turma=acharTurma(turmasDe(d.inst),x);});draw();};
+    qa("[data-gdest]").forEach(s=>s.onchange=re);qa("[data-gmod]").forEach(sg=>sg.onclick=e=>{const b=e.target.closest("button");if(!b)return;sync();RD.groups[+sg.dataset.gmod].modelo=b.dataset.v;draw();});
+    qa("[data-gon]").forEach(c=>c.onchange=()=>{sync();if(ctx.turma&&c.checked)RD.groups.forEach(x=>{if(x.gi!==+c.dataset.gon)x.on=false;});draw();});
+    qa("[data-ck]").forEach(c=>c.onchange=()=>{sync();draw();});if(g("rdKit"))g("rdKit").onchange=()=>{sync();};
+    $("rdBack").onclick=()=>{RD.groups=null;RD.dest=null;leitor(ctx);};$("rdGo").onclick=()=>{sync();salvarLeitura();};};draw();}
+async function salvarLeitura(){const ctx=RD.ctx,d=RD.dest,tipo=ctx.tipo||"escola",ano=ctx.ano||curAno();const btn=$("rdGo");if(btn)btn.disabled=true;const volta=()=>{if(btn)btn.disabled=false;};
+  try{const gs=RD.groups.filter(g=>g.on&&g.items.some(i=>i.on));if(!gs.length){volta();return toast("⚠️","Nenhum aluno marcado","");}
+    for(const g of gs)if(!g.turma&&!(g.novo||"").trim()){volta();return toast("⚠️","Dê um nome à turma","Falta o nome em uma das turmas marcadas.");}
+    let inst=ctx.inst||(ctx.turma?(D.turmas.find(x=>x.id===ctx.turma)||{}).inst:"")||d.inst;
+    if(!inst){const nm=(d.newInst||"").trim();if(!nm){volta();return toast("⚠️","Dê um nome à "+(tipo==="escola"?"escola":"faculdade"),"");}inst=await B.add("inst",{nome:nm,tipo,ano,cidade:"",autor:UID,criado:Date.now()});}
+    const kmap=new Map(kits().map(k=>[nrm(k.nome),k]));
+    if(RD.criarKits){const kn=kitsNovos();if(kn.size){let ks=kitsComCor(kits().slice());kn.forEach((v,k)=>{ks=kitsComCor(ks.concat([{id:nid(),nome:v.nome,preco:v.preco||0,custo:0}]));});ks.forEach(k=>kmap.set(nrm(k.nome),k));await saveKitsList(ks);}}
+    const nomeMes=m=>{const i=mesIdx(m);return i>=0?MES[i].charAt(0).toUpperCase()+MES[i].slice(1):m;};let nA=0,nU=0,nT=0,last=null;
+    for(const g of gs){let t=g.turma?D.turmas.find(x=>x.id===g.turma):null;
+      if(!t){const tv={nome:g.novo.trim(),inst,modelo:g.modelo,cols:[],hide:[],criado:Date.now(),autor:UID};if(g.modelo==="mensal"){tv.meses=(g.meses.length?g.meses:MESES_PAD.split(", ")).map(nomeMes);tv.parcela=g.parcela||0;tv.custoAluno=0;}
+        const id=await B.add("turmas",tv);t=Object.assign({id},tv);nT++;}
+      last=t;const ex=new Set(D.alunos.filter(a=>a.turma===t.id).map(a=>nrm(a.nome)));
+      for(const it of g.items){if(!it.on)continue;const nome=limparNome(it.nome)||it.nome.trim();if(!nome)continue;const extra={};let obs=it.obs||"";
+        if(it.contato&&it.contato.trim())extra.contato=fmtFone(it.contato)||it.contato.trim();
+        if(t.modelo==="mensal"){const mm={};(t.meses||[]).forEach((m,i)=>{const v=it.mes[nrm(m)]||it.mes[nrm(m).slice(0,3)];if(v)mm["m"+i]=v;});if(Object.keys(mm).length)extra.mes=mm;if(it.kit)obs=(obs?obs+" · ":"")+"Kit: "+it.kit;}
+        else{if(it.pago)extra.pago=it.pago;const ns=kitNomes(it.kit),ach=ns.map(nm=>kmap.get(nrm(nm))).filter(Boolean),falt=ns.filter(nm=>!kmap.get(nrm(nm)));if(ach.length){extra.kits=ach.map(k=>k.id);extra.kit=ach[0].id;extra.total=it.total||ach.reduce((s,k)=>s+(Number(k.preco)||0),0);}else if(it.total)extra.total=it.total;if(falt.length)obs=(obs?obs+" · ":"")+"Kit: "+falt.join(" + ");}
+        if(obs)extra.obs=obs;
+        if(it.dup){if(Object.keys(extra).length){await B.update("alunos",it.dup,extra);nU++;}}
+        else if(!ex.has(nrm(nome))){const v={turma:t.id,nome,contato:"",criado:Date.now(),autor:UID};if(t.modelo!=="mensal")Object.assign(v,{pago:0,total:0,envio:"Não enviado",placa:"",obs:"",kit:"",kits:[]});else Object.assign(v,{mes:{},obs:""});await B.add("alunos",Object.assign(v,extra));nA++;ex.add(nrm(nome));}}}
+    closeSheet();RD={};toast("✅",`${nA} aluno(s) adicionado(s)${nU?` · ${nU} atualizado(s)`:""}`,nT?`${nT} turma(s) criada(s)`:`Turma ${last.nome}`);
+    if(!ctx.turma){if(gs.length===1&&last)go({v:"turma",id:last.id,t:tipo});else go({v:"instd",id:inst,t:tipo});}}
+  catch(e){console.warn(e);volta();toast("⚠️","Não foi possível salvar",(e&&e.message)||"Tente de novo.");}}
+
 /* ================= FOLHA, AVISOS ================= */
 function sheet(h,after){$("sheet").innerHTML=`<div class="in" role="dialog" aria-modal="true">${h}</div>`;$("sheet").classList.remove("hidden");guard();if(after)after();}
 function closeSheet(){$("sheet").classList.add("hidden");$("sheet").innerHTML="";}
